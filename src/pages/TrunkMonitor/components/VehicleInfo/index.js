@@ -1,13 +1,13 @@
 /*
  * @Description:
  * @Project: 车辆信息模块
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-13 10:05:28
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2021-12-16 20:02:23
  * @LastEditors: Please set LastEditors
  * @lastTime: 2021-09-24 16:05:27
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @文件相对于项目的路径: /TrunkFace/src/pages/TrunkMonitor/components/VehicleInfo/index.js
  */
 import React, { Component } from 'react';

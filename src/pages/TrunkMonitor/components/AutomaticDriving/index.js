@@ -1,11 +1,11 @@
 /*
  * @Description: 自动驾驶数据
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-10 15:13:13
  * @LastEditors: Libj
  * @LastEditTime: 2022-02-25 11:33:19
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/pages/TrunkMonitor/components/AutomaticDriving/index.js
  */
 import React, { Component } from 'react';

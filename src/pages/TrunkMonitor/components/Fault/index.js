@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project: 实时故障模块
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-13 10:05:28
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @lastTime: 2021-11-12 09:23:13
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @文件相对于项目的路径: /TrunkFace/src/pages/TrunkMonitor/components/Fault/index.js
  */
 import React, { Component } from 'react';

@@ -1,9 +1,9 @@
 /*
  * @Description: 车辆详细信息
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-10-20 17:31:12
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @文件相对于项目的路径: /TrunkFace/src/pages/TrunkDev/components/CarMsg/index.js
  */
 import { connect } from 'umi';

@@ -1,11 +1,11 @@
 /*
  * @Description: 缓存比对
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-11-04 15:11:36
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2021-11-04 15:11:36
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/utils/cache.js
  */
 export default class Cache {

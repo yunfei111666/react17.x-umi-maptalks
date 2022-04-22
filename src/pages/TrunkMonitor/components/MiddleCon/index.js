@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project: 中间布局
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-09 16:45:24
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @lastTime: 2021-11-04 10:04:13
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @文件相对于项目的路径: /TrunkFace/src/pages/TrunkMonitor/components/MiddleCon/index.js
  */
 import React, { Component } from 'react';

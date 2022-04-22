@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-16 10:56:23
  * @LastEditors: Libj
  * @LastEditTime: 2022-02-25 11:32:02
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/utils/resize.js
  */
 

@@ -1,11 +1,11 @@
 /*
  * @Description: 车辆列表组件
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-10-19 17:29:13
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @lastTime: 2021-11-12 13:37:36
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @文件相对于项目的路径: /TrunkFace/src/pages/TrunkDev/components/CarList/index.js
  */
 import React, { Component } from 'react';

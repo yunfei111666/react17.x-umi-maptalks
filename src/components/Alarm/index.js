@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project: 故障详情通用模块
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-11-03 17:51:23
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2022-01-17 14:33:07
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/components/Alarm/index.js
  */
 import React, { Component } from 'react';

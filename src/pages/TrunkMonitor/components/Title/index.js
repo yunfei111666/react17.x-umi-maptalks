@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project: 内容区标题组件
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-09 17:20:40
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2021-09-14 11:07:27
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/pages/TrunkMonitor/components/Title/index.js
  */
 import React, { Component } from 'react';

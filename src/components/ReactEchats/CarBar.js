@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project: 车辆信息横向柱状图
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-13 17:03:00
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2021-11-16 17:41:06
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/components/ReactEchats/CarBar.js
  */
 import React, { Component, memo } from 'react';

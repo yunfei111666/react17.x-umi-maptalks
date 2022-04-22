@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project: 环形图组件
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-10 22:57:55
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2021-09-26 11:32:11
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/components/ReactEchats/AutoPie.js
  */
 import React, { Component, memo } from 'react';

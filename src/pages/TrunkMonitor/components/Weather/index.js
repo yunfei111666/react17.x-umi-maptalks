@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project: 天气温度组件
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-09 15:39:51
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2021-09-16 11:19:13
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/pages/TrunkMonitor/components/Weather/index.js
  */
 import React, { Component } from 'react';

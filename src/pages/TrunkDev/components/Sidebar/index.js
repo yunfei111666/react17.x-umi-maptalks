@@ -1,11 +1,11 @@
 /*
  * @Description: 侧边栏组件
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-10-08 14:10:27
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2022-01-20 10:01:52
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/pages/TrunkDev/components/Sidebar/index.js
  */
 import React, { Component } from 'react';

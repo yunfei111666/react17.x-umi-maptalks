@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-22 11:35:37
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2022-01-17 16:31:12
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/utils/imgAdress.js
  */
 import barGraph from 'images/home/barGraph.png';

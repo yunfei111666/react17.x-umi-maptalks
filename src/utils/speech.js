@@ -1,11 +1,11 @@
 /*
  * @Description: 语音播报
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-11-03 10:22:42
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2021-11-04 18:14:20
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/utils/speech.js
  */
 

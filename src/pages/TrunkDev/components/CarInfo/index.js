@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-11-08 17:18:48
  * @LastEditors: Please set LastEditors
  * @lastTime: 2021-11-11 12:59:15
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @文件相对于项目的路径: /TrunkFace/src/pages/TrunkDev/components/CarInfo/index.js
  */
 import React, { Component } from 'react';

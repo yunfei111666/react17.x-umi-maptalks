@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-13 14:44:24
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @LastEditTime: 2021-09-17 14:20:10
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @FilePath: /TrunkFace/src/utils/index.js
  */
 import imgAdress from './imgAdress';

@@ -1,5 +1,5 @@
 /*
- * @Author: JackFly
+ * @Author: yunfei
  * @since: 2021-08-18 16:02:00
  * @lastTime: 2021-11-03 14:12:52
  * @文件相对于项目的路径: /TrunkFace/src/components/Map/model/WaveWall.js

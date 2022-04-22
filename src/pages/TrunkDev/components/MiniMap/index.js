@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-10-13 10:33:30
  * @LastEditors: Libj
  * @lastTime: 2021-12-16 19:28:19
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @文件相对于项目的路径: /TrunkFace/src/pages/TrunkDev/components/MiniMap/index.js
  */
 import React, { Component } from 'react';

@@ -1,11 +1,11 @@
 /*
  * @Description:
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-09-28 10:14:27
  * @LastEditors: Libj
  * @lastTime: 2021-11-05 14:59:01
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @文件相对于项目的路径: /TrunkFace/src/services/index.js
  */
 import { extend } from 'umi-request';

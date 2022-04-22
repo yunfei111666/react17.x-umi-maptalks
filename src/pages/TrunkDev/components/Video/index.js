@@ -1,11 +1,11 @@
 /*
  * @Description:视频组件
  * @Project:
- * @Author: michelle
+ * @Author: yunfei
  * @Date: 2021-10-12 17:40:16
- * @LastEditors: michelle
+ * @LastEditors: yunfei
  * @lastTime: 2021-11-11 13:16:52
- * @Modified By: michelle
+ * @Modified By: yunfei
  * @文件相对于项目的路径: /TrunkFace/src/pages/TrunkDev/components/Video/index.js
  */
 import React, { Component } from 'react';
