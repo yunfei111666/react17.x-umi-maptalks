@@ -1,0 +1,483 @@
+@import url(../../theme/mixin.less);
+
+.bt {
+    border-bottom: 2px solid #384a7c;
+}
+
+.bg {
+    background: rgba(32, 54, 113, 0.9);
+}
+
+.warn {
+    color: #df9214;
+}
+
+.error {
+    color: #ff0a0a;
+}
+
+.monitorBox {
+    .tableHead {
+        margin: 0 25px;
+
+        span {
+            color: #eef5ff;
+        }
+    }
+
+    .tabBox {
+        height: 108px;
+        padding: 17px 43px 21px;
+        color: #eef5ff;
+        .bt();
+
+        .modelBox {
+            margin-bottom: 10px;
+        }
+    }
+
+    .row {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 37px;
+        line-height: 37px;
+        padding: 0 18px;
+    }
+
+    .collapseBox {
+        margin: 0 25px;
+        height: 400px;
+    }
+
+    .panelBox {
+        display: flex;
+
+        span {
+            flex: 1;
+        }
+    }
+
+    .panelConBox {
+        display: flex;
+
+        span {
+            min-width: 12%;
+        }
+    }
+
+    :global {
+        .ant-btn {
+            height: auto;
+        }
+
+        .ant-btn-text,
+        .ant-radio-wrapper {
+            color: #eef5ff;
+            font-size: 14px;
+
+            .icon-dituxiafa {
+                font-size: 14px;
+                padding-right: 5px;
+            }
+        }
+
+        .ant-btn-text.active {
+            background: #4e6cb8;
+            border-radius: 6px;
+        }
+
+        .ant-collapse {
+            .ant-collapse-item {
+                border: 1px solid rgba(130, 151, 222, 0.28);
+                border-radius: 6px;
+                margin-bottom: 4px;
+
+                .ant-collapse-header {
+                    color: #eef5ff;
+                    background: rgba(130, 151, 222, 0.28);
+
+                    .ant-collapse-arrow svg {
+                        font-size: 16px;
+                    }
+                }
+
+                .ant-collapse-content {
+                    background: rgba(130, 151, 222, 0.28);
+                    border-top: 2px solid #576aa2;
+
+                    .ant-collapse-content-box {
+                        //table样式
+                        .ant-table-wrapper {
+                            .ant-table-thead > tr > th {
+                                background: rgba(56, 150, 255, 0.1);
+                                color: #fff;
+                                border: none;
+                                font-size: 12px;
+                                font-weight: 500;
+                                line-height: 30px;
+                                padding: 10px 5px;
+                            }
+
+                            .ant-table {
+                                background: #0c2265;
+                                color: white;
+                            }
+
+                            .ant-empty-description {
+                                color: #becbe9;
+                            }
+
+                            .ant-table-tbody {
+                                tr {
+                                    td {
+                                        color: #dee2f4;
+                                    }
+
+                                    &.ant-table-placeholder:hover {
+                                        td {
+                                            background: #0c2265;
+                                        }
+                                    }
+
+                                    &.ant-table-row:hover > td {
+                                        background: rgba(56, 150, 255, 0.1);
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .ant-checkbox-wrapper {
+            color: #eef5ff;
+            float: right;
+            //margin: -10px 0 10px;
+        }
+    }
+}
+.search {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 0 10px;
+
+    //覆盖antd默认样式
+    :global {
+        //input样式
+        .ant-input {
+            background-color: transparent; // @dev-table-head-bg-color;
+            color: @dev-table-font-color;
+            border-color: @dev-table-bd-color;
+            border-radius: 8px;
+            height: 36px;
+            line-height: 36px;
+        }
+
+        .ant-input::-webkit-input-placeholder {
+            color: @dev-table-font-color;
+        }
+
+        .ant-input::-moz-input-placeholder {
+            color: @dev-table-font-color;
+        }
+
+        .ant-input::-ms-input-placeholder {
+            color: @dev-table-font-color;
+        }
+
+        .ant-input-group {
+            color: #fff;
+        }
+
+        .ant-input-group-addon {
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        .ant-input-group-addon > .ant-btn {
+            background-color: transparent;
+            border-color: @dev-table-bd-color;
+            border-radius: 0 8px 8px 0 !important;
+            color: @dev-table-font-color;
+            height: 36px;
+        }
+
+        .ant-input-search .ant-input:hover,
+        .ant-input-search .ant-input:focus {
+            color: @dev-table-font-color;
+            border-color: @dev-table-bd-color;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+.devBox {
+    .tableHead {
+        margin: 8px 15px 0 10px;
+
+        span {
+            color: @dev-popover-title-font-color;
+        }
+    }
+
+    .tabBox {
+        height: 90px;
+        padding: 13px 15px 13px;
+        font-size: 14px;
+        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+        font-weight: 400;
+        color: @dev-popover-tab-font-color;
+        line-height: 24px;
+        border-bottom: 1px solid @dev-popover-bd-color;
+
+        .modelBox {
+            margin-bottom: 15px;
+
+            :global {
+                .ant-btn-text {
+                    font-size: 14px;
+                    font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                    font-weight: 400;
+                    color: @dev-popover-tab-font-color;
+                    line-height: 24px;
+                    width: 48px;
+                    height: 24px;
+                    padding: 0;
+                    margin-right: 8px;
+                }
+
+                .ant-btn-text.active {
+                    background: rgba(80, 152, 255, 0.3);
+                    font-weight: 500;
+                    color: #5098ff;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        .stateBox {
+            :global {
+                .ant-btn-text {
+                    font-size: 14px;
+                    font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                    font-weight: 400;
+                    line-height: 24px;
+                    width: 48px;
+                    height: 24px;
+                    padding: 0;
+                    margin-right: 8px;
+                }
+
+                .ant-btn-text:nth-child(1) {
+                    color: #ff0a0a;
+                    background: rgba(255, 10, 10, 0.1);
+                    border-radius: 6px;
+                }
+
+                .ant-btn-text:nth-child(2) {
+                    color: #ffb800;
+                    background: rgba(255, 184, 0, 0.17);
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+
+    .collapseBox {
+        height: 556px;
+
+        :global {
+            .ant-collapse {
+                .ant-collapse-item {
+                    border-radius: 6px;
+                    margin: 8px 15px 0 15px;
+
+                    .ant-collapse-header {
+                        background: @dev-collapse-header-bg-color;
+                        padding: 8px 36px 8px 10px;
+                        height: 40px;
+                        border-radius: 8px;
+
+                        svg {
+                            font-size: 14px;
+                            color: #63a3ff;
+                            margin-right: -8px;
+                        }
+                    }
+
+                    .ant-collapse-content {
+                        background: @dev-collapse-header-bg-color;
+                        border-top: 1px solid @dev-collapse-header-bd-color;
+
+                        .ant-collapse-content-box {
+                            //table样式
+                            .ant-table-wrapper {
+                                .ant-table-thead > tr > th {
+                                    background: @dev-collapse-header-bg-color;
+                                    color: @dev-collapse-con-font-color;
+                                    border: none;
+                                    font-size: 14px;
+                                    height: 24px;
+                                    line-height: 30px;
+                                    padding: 0 5px;
+                                    font-family: SourceHanSansCN-Regular,
+                                        SourceHanSansCN;
+                                    font-weight: 400;
+                                }
+
+                                .ant-table {
+                                    background: @dev-collapse-header-bg-color;
+                                }
+
+                                .ant-empty-description {
+                                    color: #becbe9;
+                                }
+
+                                .ant-table-tbody {
+                                    tr {
+                                        td {
+                                            color: @dev-collapse-con-font-color;
+                                        }
+
+                                        &.ant-table-placeholder:hover {
+                                            td {
+                                                background: #0c2265 !important;
+                                            }
+                                        }
+
+                                        &.ant-table-row:hover > td {
+                                            background: rgba(56, 150, 255, 0.1);
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .ant-collapse-item-active {
+                    .ant-collapse-header {
+                        border-radius: 8px 8px 0 0;
+                    }
+
+                    .ant-collapse-content-active {
+                        border-radius: 0 0 8px 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .panelBox {
+        display: flex;
+        overflow: hidden;
+        justify-content: flex-start;
+
+        span {
+            min-width: 140px;
+            flex: 1;
+            height: 24px;
+            font-size: 14px;
+            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        span:nth-child(1),
+        span:nth-child(2) {
+            min-width: 70px;
+        }
+        span:nth-child(2) {
+            color: #001d7a;
+        }
+        span:nth-child(4) {
+            color: #df9214;
+        }
+    }
+}
+
+.publicClass {
+    .tableHead {
+        display: flex;
+        overflow: hidden;
+        padding: 8px 28px 8px 10px;
+        width: calc(100% - 38px);
+
+        span {
+            min-width: 140px;
+            font-size: 14px;
+            font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+            font-weight: 400;
+            line-height: 24px;
+            flex: 1;
+        }
+
+        span:nth-child(1),
+        span:nth-child(2) {
+            min-width: 70px;
+        }
+    }
+
+    .tabBox {
+        width: 100%;
+    }
+
+    .collapseBox {
+        overflow-y: auto;
+
+        :global {
+            .ant-collapse {
+                background: transparent;
+                border: 0;
+            }
+
+            .ant-collapse-content-box {
+                color: #eef5ff;
+                font-size: 12px;
+                font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                font-weight: 400;
+
+                .ant-table-wrapper,
+                .ant-spin-nested-loading,
+                .ant-spin-container,
+                .ant-table-container {
+                    height: 100%;
+                }
+
+                .ant-table {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 10px;
+                    border: none;
+                    border-radius: 8px;
+                }
+
+                .ant-table-tbody {
+                    height: 100%;
+                    overflow-y: auto;
+
+                    tr {
+                        td {
+                            border: none;
+                            padding: 10px;
+                            font-size: 10px;
+                            font-family: SourceHanSansCN-Regular,
+                                SourceHanSansCN;
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+                .ant-table-tbody > .ant-table .ant-table-container::before,
+                .ant-table .ant-table-container::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

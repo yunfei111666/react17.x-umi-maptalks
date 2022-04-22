@@ -1,0 +1,188 @@
+@import url(../../../../theme/mixin.less);
+@import url(../../../../theme/global-css.less);
+.popoverCarCon {
+    height: auto; //auto;
+    width: 730px; //370px;
+    background: @dev-popover-bg-color;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    min-height: 500px;
+    .search {
+        width: 100%;
+        height: 40px;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 0 10px;
+
+        //覆盖antd默认样式
+        :global {
+            //input样式
+            .ant-input {
+                background-color: transparent; // @dev-table-head-bg-color;
+                color: @dev-table-font-color;
+                border-color: @dev-table-bd-color;
+                border-radius: 8px;
+                height: 36px;
+                line-height: 36px;
+            }
+
+            .ant-input::-webkit-input-placeholder {
+                color: @dev-table-font-color;
+            }
+
+            .ant-input::-moz-input-placeholder {
+                color: @dev-table-font-color;
+            }
+
+            .ant-input::-ms-input-placeholder {
+                color: @dev-table-font-color;
+            }
+
+            .ant-input-group {
+                color: #fff;
+            }
+
+            .ant-input-group-addon {
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            .ant-input-group-addon > .ant-btn {
+                background-color: transparent;
+                border-color: @dev-table-bd-color;
+                border-radius: 0 8px 8px 0 !important;
+                color: @dev-table-font-color;
+                height: 36px;
+            }
+
+            .ant-input-search .ant-input:hover,
+            .ant-input-search .ant-input:focus {
+                color: @dev-table-font-color;
+                border-color: @dev-table-bd-color;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .table {
+        height: calc(100% - 145px);
+
+        :global {
+            .ant-table-wrapper,
+            .ant-spin-nested-loading,
+            .ant-spin-container,
+            .ant-table-container {
+                height: 100%;
+            }
+
+            .ant-table-wrapper {
+                height: 100%;
+            }
+
+            .ant-table {
+                width: 100%;
+                height: 100%;
+                background: transparent !important;
+            }
+
+            .ant-table-thead {
+                height: 48px;
+                border-radius: 15px 15px 0px 0px;
+
+                .ant-table-cell {
+                    &::before {
+                        display: none;
+                    }
+
+                    background: @dev-table-head-bg-color;
+                    font-size: 14px;
+                    font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                    font-weight: 500;
+                    color: @dev-table-head-font-color;
+                    line-height: 22px;
+                    border-bottom: 1px solid @dev-table-bd-color !important;
+                }
+            }
+
+            .ant-table-body {
+                height: 100%;
+
+                // table {
+                //     height: 100%;
+                // }
+            }
+
+            .ant-table-tbody {
+                height: 100%;
+                overflow-y: auto;
+                height: 100%;
+
+                .ant-table-row {
+                    height: 40px;
+
+                    .ant-table-cell {
+                        font-size: 13px;
+                        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                        font-weight: 400;
+                        color: @dev-table-font-color;
+                        line-height: 22px;
+                        .normal {
+                            width: 38px;
+                            display: inline-block;
+                            background: #6a9dff;
+                            color: #fff;
+                        }
+                        .low {
+                            background: #ff2a2a !important;
+                        }
+                    }
+                }
+
+                .ant-space-item {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        color: @dev-table-font-color;
+                    }
+                }
+
+                tr.ant-table-row:hover > td {
+                    cursor: pointer;
+                    background: @dev-table-head-bg-color;
+                }
+
+                tr.ant-table-placeholder > td {
+                    background: transparent;
+
+                    .ant-empty-description {
+                        color: @dev-table-font-color;
+                    }
+                }
+
+                tr {
+                    td {
+                        padding: 5px;
+                        border-bottom: 1px solid @dev-table-bd-color !important;
+                    }
+                }
+
+                tr.ant-table-row-selected {
+                    td {
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+    // .active {
+    //     color: #5098ff !important;
+    // }
+}
+.title {
+    margin: 10px;
+}
+// @media screen and (min-width: 1921px) {
+//     .popoverCarCon {
+//         min-width: 1000px !important;
+//     }
+// }

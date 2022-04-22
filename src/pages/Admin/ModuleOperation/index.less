@@ -1,0 +1,50 @@
+@import '../../../theme/mixin.less';
+@import '../../../theme/global-css.less';
+
+#opera,
+.module {
+    :global {
+        .sub-container {
+            overflow: auto !important;
+        }
+        .ant-modal-body {
+            max-height: 450px;
+        }
+        .ant-tag {
+            margin: 3px !important;
+        }
+        /* tile uploaded pictures */
+        .ant-upload-list-picture-container {
+            float: left;
+            width: 220px;
+            margin-right: 10px;
+        }
+        .ant-upload.ant-upload-drag p.ant-upload-text {
+            font-size: 12px !important;
+            margin: 0 !important;
+        }
+        .ant-upload.ant-upload-drag p.ant-upload-drag-icon {
+            margin: 0 !important;
+        }
+        .ant-upload.ant-upload-drag p.ant-upload-hint {
+            font-size: 10px !important;
+        }
+        // .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+        //     .ant-select-selector,
+        // .ant-picker-input > input[disabled],
+        // .ant-input[disabled],
+        // .ant-select-disabled.ant-select-multiple .ant-select-selection-item {
+        //     color: unset;
+        // }
+        .ant-select-selector {
+            background-color: var(--input-bg-color, #fff);
+            border: 1px solid var(--tab-icon-default-color, #d9d9d9);
+            transition: @themeColorAnimation;
+        }
+        .ant-select-multiple .ant-select-selection-item {
+            background-color: var(--dev-side-light-bg-color);
+            border-color: @dev-table-bd-color;
+            color: @dev-shesuo-icon-color;
+        }
+    }
+}

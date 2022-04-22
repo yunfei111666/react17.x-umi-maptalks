@@ -1,0 +1,29 @@
+// [START declaration]
+syntax = "proto3";
+// [END declaration]
+import "act_jobs.proto";
+import "act_status.proto";
+import "machine_status.proto";
+// [START messages]
+
+message ActFault{
+    string che_id = 1;
+    string code = 2;
+    string alarm_level = 3;
+    string alarm_level_desc = 4;
+    string category = 5;
+    string category_desc = 6;
+    string alarm_type = 7;
+    string alarm_type_desc = 8;
+    string alarm_code = 9;
+    string alarm_code_desc = 10;
+    string sub_code = 11;
+    string sub_desc = 12;
+}
+
+message Data{
+    repeated ActStatus act_status = 1; // 所有车的状态
+    repeated ActJobs act_jobs = 2; // 所有车job
+    repeated MachineStatus machine_status = 3;  // 所有设备状态
+    repeated ActFault act_faults = 4;  // 所有车的实时故障
+}

@@ -1,0 +1,65 @@
+@import url(../../../../theme/mixin.less);
+
+.carPopoverCon {
+    width: 100%;
+    height: auto;
+    .tabBox {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 18px 28px;
+        .li {
+            display: inline-block;
+            height: 38px;
+            min-width: 50%;
+            overflow: hidden;
+            span:first-child {
+                // font-weight: 600;
+                font-size: 14px;
+            }
+            span:nth-child(2) {
+                display: inline-block;
+                -webkit-user-select: all !important;
+            }
+            span:nth-child(3) {
+                display: inline-block;
+            }
+        }
+    }
+    .pos {
+        width: 100%;
+        display: flex;
+        > span:first-child {
+            // font-weight: 600;
+            font-size: 14px;
+        }
+        > div {
+            margin-left: 20px;
+            span {
+                display: inline-block;
+                height: 40px;
+            }
+        }
+    }
+    :global {
+        .ant-tabs-nav-list {
+            justify-content: space-around;
+            width: 100%;
+            // background-color: @dev-tab-bg-color;
+        }
+        .ant-tabs > .ant-tabs-nav {
+            margin: 0;
+            height: 45px;
+            background: #f6faff;
+        }
+        .ant-tabs-tab {
+            font-size: 18px;
+        }
+        .ant-tabs-tab + .ant-tabs-tab {
+            margin: 0;
+        }
+        .ant-table-cell > a {
+            font-size: 16px;
+        }
+    }
+}

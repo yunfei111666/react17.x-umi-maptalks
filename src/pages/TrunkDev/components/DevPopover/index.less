@@ -1,0 +1,52 @@
+@import url(../../../../theme/mixin.less);
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.popover {
+    position: absolute;
+    width: auto;
+    // height: 689px;
+    right: 92px;
+    top: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 2px @dev-popover-bs-color;
+    background: @dev-popover-bg-color;
+
+    .title {
+        height: 39px;
+        width: 100%;
+        padding: 7.5px 13px;
+        border-bottom: 1px solid @dev-car-title-bd-color;
+        display: block;
+
+        .text {
+            font-size: 16px;
+            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+            font-weight: 400;
+            color: @dev-popover-title-font-color;
+            line-height: 24px;
+            float: left;
+        }
+
+        i {
+            font-size: 20px;
+            color: @dev-popover-title-font-color;
+            line-height: 24px;
+            float: right;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .carTitle {
+        display: none;
+    }
+}

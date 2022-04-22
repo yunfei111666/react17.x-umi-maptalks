@@ -1,0 +1,79 @@
+.main {
+    width: 100%;
+    margin-bottom: 45px;
+    .title {
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 28px;
+        font-family: 'SiYuan';
+        font-weight: 500;
+        color: #ffffff;
+        letter-spacing: 1px;
+        background: linear-gradient(
+            270deg,
+            rgba(34, 105, 255, 0) 0%,
+            rgba(34, 105, 255, 0.2) 49%,
+            rgba(34, 105, 255, 0.4) 100%
+        );
+        i {
+            font-size: 20px;
+            width: 20px;
+            height: 45px;
+            line-height: 45px;
+            margin-right: 20px;
+            margin-left: 19px;
+            font-size: 24px;
+        }
+    }
+    .content {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 2px;
+        box-shadow: 0 0 20px #26a;
+        border-radius: 10px;
+        .gradient {
+            position: absolute;
+            top: -160px;
+            right: -255px;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0) calc(50% - 250px / 2),
+                #0cf 50%,
+                rgba(0, 0, 0, 0) calc(50% + 250px / 2)
+            );
+            animation: borderAnimation 5s infinite linear;
+        }
+        .contents {
+            position: relative;
+            display: inline-block;
+            padding: 2px;
+            font-size: 0;
+            width: 100%;
+            height: 100%;
+            background: #050f44;
+            border-radius: 10px;
+        }
+    }
+}
+/* 边框动画 */
+@keyframes borderAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+.card {
+    backface-visibility: hidden;
+}
+.flipped {
+    transform: rotateY(180deg);
+}

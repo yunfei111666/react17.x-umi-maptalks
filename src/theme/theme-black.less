@@ -1,0 +1,103 @@
+// 深色主题
+
+.theme-black {
+    //admin
+    --bg-color: #000; //背景底色
+    --bg-contont-color: #121322; // 主页背景色
+    --entry-bg-color: linear-gradient(
+        176deg,
+        #3f67a2 0%,
+        #284da2 100%
+    ); // 首页入口背景渐变
+    --entry-stroke-color: #0f141a; //首页入口描边色
+    --tab-color: #191f3f; //选项卡背景色
+    --tab-stroke-color: #131623; // 选项卡描边色
+    --tab-font-default-color: #becbe9; //选项卡默认字体色
+    --tab-font-light-color: #e5e8f0; //选项卡高亮字体色
+    --tab-icon-default-color: #363c57; // 选项卡图标色
+    --sider-bg-color: #141934; //侧边栏背景色 主体内容背景色
+    --sider-font-default-color: #dde1e9; //侧边栏默认字体色
+    --sider-icon-default-color: #dde1e9; //侧边栏默认图标字体色
+    --sider-font-light-color: #fff; //侧边栏高亮字体色
+    --sider-icon-light-color: #fff; //侧边栏高亮图标字体色
+    --sider-bg-light-left-bd-color: #eceef4; //侧边栏选中高亮背景 左侧边框色
+    --sider-bg-light-color: linear-gradient(
+        90deg,
+        rgba(197, 219, 255, 0.52) 0%,
+        rgba(60, 70, 109, 0.5) 100%
+    ); //侧边栏选中高亮背景色
+    --sider-logo-font-color: #fff; //侧边栏logo字体色
+    --sider-collapsed-btn-font-color: #7b839c; //伸缩按钮svg 字体颜色
+    --table-head-color: #141834; // 表格表头背景色
+    --table-hover-font-color: #b5c5e5; // 表格hover字体颜色
+    --table-border-color: #454c5d; //表格边框颜色
+    --pagination-font-default-color: #fff; //分页默认字体色
+    --input-bg-color: #242a4c; //输入框背景色
+    --scrollbar-color: #41465f; // 滚动条颜色
+    --avatar-bg-color: #3c466d; //头像背景
+    --second-white-font-color: #b0bfdf; // 黑色字体
+    --white-font-color: #fff; //白色字体
+    --map-white-font-color: #fff; //地图工具栏颜色
+    --map-view-font-color: #fff; //地图绘制栏颜色
+    --faults-view-button-color: rgba(2, 17, 29, 0.5);
+    --avatar-bs-color: 0px 2px 8px 2px #131623; //导航栏图标阴影色
+
+    --faults-mesage-background-color: rgba(19, 25, 52, 0.3) 0%;
+    --faults-mesage2-background-color: rgba(19, 25, 52, 1) 100%;
+
+    //dev
+    --dev-head-bg-color: linear-gradient(
+        90deg,
+        #121322 0%,
+        rgba(91, 94, 105, 0.1) 35%,
+        rgba(231, 238, 244, 0) 100%
+    ); //头部背景色
+    --dev-head-font-color: #ffffff; //头部字体色
+    --dev-side-bg-color: rgba(18, 19, 34, 0.5); //侧边栏背景色
+    --dev-side-light-bg-color: rgba(238, 241, 245, 0.3); //侧边栏高亮背景色
+    --dev-side-icon-color: #7b839c; //侧边栏字体图标颜色
+    --dev-side-icon-light-color: #ffffff; //侧边栏字体图标高亮颜色
+    --dev-side-font-color: #dde1e9; //侧边栏字体颜色
+    --dev-side-font-light-color: #ffffff; //侧边栏高亮字体颜色
+    --dev-popover-bg-color: #191f3f; //提示框背景色
+    --dev-popover-bs-color: rgba(19, 22, 35, 0.62); //提示框阴影色
+    --dev-map-bg-color: #141834; //地图背景色
+    --dev-popover-title-font-color: #fcfdff; //提示框标题字体色
+    --dev-popover-tab-font-color: #becbe9; //提示框tab字体色
+    --dev-popover-bd-color: #454c5d; //提示框边框颜色
+    --dev-collapse-header-bg-color: #3c466d; //折叠框背景色
+    --dev-collapse-header-bd-color: #3c466d; //折叠框边框色
+    --dev-table-head-bg-color: #141834; //table表头背景色
+    --dev-table-head-font-color: #becbe9; //table表头字体色
+    --dev-table-bd-color: #454c5d; //table边框色
+    --dev-table-font-color: #b5c5e5; //table字体色
+    --dev-tab-bg-color: #141834; //tab切换背景色
+    --dev-tab-font-color: #becbe9; //tab切换字体色
+    --dev-form-font-color: #becbe9; //form字体色
+    --dev-tag-bg-color: #141834; //右侧背景色
+    --dev-tag-font-color: #cbd7f4; //右侧字体色
+    --dev-form-input-bg-color: #2d3656; //input背景色
+    --dev-form-input-bd-color: #141834; //input边框色
+    --dev-form-btn-bs-color: #131623; //按钮阴影色
+    --dev-popover-bs-color: rgba(19, 22, 35, 0.62); //提示框阴影色
+    --dev-car-title-font-color: #fcfdff; //车辆详情标题字体色
+    --dev-car-title-bd-color: #454c5d; //车辆详情标题边框色
+    --dev-car-con-font-color: #b5c5e5; //车辆详情字体色
+    --dev-car-con-bd-color: transparent; //车辆详情内容边框色
+    --dev-video-bd-color: #454c5d; //视频组件边框色
+    --dev-video-bds-color: #141834; //视频列表边框色
+    --dev-video-bg-color: #2d3656; //视频列表背景色
+    --dev-video-font-color: #9caac9; //视频列表字体色
+    --dev-video-input-bd-color: #141834; //视频表单中边框色
+    --dev-switch-point-bg-color: #191f3f; //视频中开关圆点背景色
+    --dev-shesuo-icon-color: #fcfdff; //伸缩按钮颜色
+    --dev-collapse-con-font-color: #becbe9; //折叠区内容字体颜色
+    --dev-select-font-color: #404856;
+    --dev-select-arrow-color: #becbe9;
+    --dev-pool-group-header-bg-color: #141834;
+    --dev-pool-group-header-font-color: #becbe9;
+    --dev-pool-group-main-bg-color: #191f3f;
+    --dev-pool-item-bg-color: #505e95;
+    --dev-pool-item-font-color: #e7eeff;
+    --dev-car-pools-bg-color: #191f3f;
+}

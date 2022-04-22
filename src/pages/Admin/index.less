@@ -1,0 +1,176 @@
+@import '../../theme/global-css.less';
+
+.carManagement {
+    width: 100%;
+    height: 100%;
+
+    .linkEntry {
+        width: 100%;
+        display: flex;
+        margin-bottom: 15px;
+        height: 185px;
+        justify-content: space-between;
+        // transition: @themeColorAnimation;
+
+        .trunkEntry {
+            width: calc(50% - 12px);
+            height: 100%;
+            background: var(
+                --entry-bg-color,
+                linear-gradient(176deg, #9ad5ff 0%, #4b7dff 100%)
+            );
+            box-shadow: 0px 2px 6px 2px var(--entry-stroke-color, #bcc9d5);
+            border-radius: 24px;
+            position: relative;
+            transition: @themeColorAnimation;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 295px;
+                height: 185px;
+                background: url(../../assets/images/admin/dev.svg) no-repeat;
+                background-size: 100% 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: @themeColorAnimation;
+            }
+            .linkEntryTitle {
+                color: #fff;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 48px;
+                font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                margin: 45px 0 21px 47px;
+            }
+            .linkEntryIntroduce {
+                color: #f3f7ff;
+                font-size: 18px;
+                line-height: 26px;
+                font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                margin-left: 48px;
+            }
+        }
+        .trunkEntry:nth-child(2) {
+            &::after {
+                content: '';
+                background: url(../../assets/images/admin/monitor.svg) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .trunkEntry:hover {
+            transform: @cardScaleAnimation;
+            transition: @themeColorAnimation;
+            z-index: 10;
+            cursor: pointer;
+        }
+    }
+
+    .showInformation {
+        width: 100%;
+        height: calc(100% - 200px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 24px;
+        background-color: var(--sider-bg-color, #fcfcfc);
+        transition: @themeColorAnimation;
+
+        .operationalData {
+            width: 432px;
+            height: 100%;
+            flex: 0 0 432px;
+
+            .adjustStyle {
+                margin: 16px 0 8px 17px;
+                height: 40px;
+            }
+            .informationCardGather {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .echartsWorksheet {
+                height: calc(50% - 64px);
+                width: 432px;
+                background-color: var(--tab-color, #fff);
+                border-radius: 16px;
+                box-shadow: 0px 2px 8px 1px var(--tab-stroke-color, #cfd7de);
+                transition: @themeColorAnimation;
+                position: relative;
+                &:hover {
+                    transform: @cardScaleAnimation;
+                    transition: @themeColorAnimation;
+                }
+            }
+        }
+        .carDistribution {
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            transition: @themeColorAnimation;
+            &:hover {
+                transform: @cardScaleAnimation;
+                transition: @themeColorAnimation;
+            }
+        }
+        .informationCount {
+            flex: 0 0 432px;
+            height: 100%;
+
+            .adjustStyle1 {
+                margin: 16px 0 8px 0;
+                height: 40px;
+            }
+
+            .carCountEchart {
+                width: 100%;
+                height: calc(25%);
+                background-color: var(--tab-color, #fff);
+                border-radius: 16px;
+                box-shadow: 0px 2px 8px 1px var(--tab-stroke-color, #cfd7de);
+                transition: @themeColorAnimation;
+                position: relative;
+                // box-shadow: 2px 2px 14px 2px
+                //     var(--tab-stroke-color, rgba(172, 172, 172, 0.1));
+                .carTitle {
+                    height: 40px;
+                    line-height: 50px;
+                    display: flex;
+                    color: var(--tab-font-default-color, #131415);
+                    text-align: center;
+                    div {
+                        flex: 1;
+                        font-size: 14px;
+                        b {
+                            font-size: 20px;
+                            padding-left: 15px;
+                        }
+                    }
+                }
+                .carEchart {
+                    width: 100%;
+                    height: calc(100% - 40px);
+                }
+                &:hover {
+                    transform: @cardScaleAnimation;
+                    transition: @themeColorAnimation;
+                }
+            }
+
+            .adjustStyle2 {
+                margin: 10px 0;
+                height: 40px;
+            }
+
+            .autoDriverEchart {
+                width: 100%;
+                height: calc(100% - 60px);
+                box-sizing: border-box;
+            }
+        }
+    }
+}

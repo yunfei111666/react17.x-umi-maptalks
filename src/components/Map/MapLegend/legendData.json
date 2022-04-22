@@ -1,0 +1,83 @@
+{
+    "device": [
+        {
+            "icon": "icon-dianxiang",
+            "color": "#3FC68E",
+            "content": "电箱"
+        },
+        {
+            "icon": "icon-chongdianzhuang",
+            "color": "#44CD7D",
+            "content": "充电桩"
+        },
+        {
+            "icon": "icon-juxing",
+            "color": "#5A6986",
+            "content": "舱盖板区"
+        },
+        {
+            "icon": "icon-suozhan1",
+            "color": "#5BACFF",
+            "content": "锁站"
+        }
+    ],
+    "network": [
+        {
+            "icon": "icon-juxing",
+            "color": "#6586B0",
+            "content": "Online"
+        },
+        {
+            "icon": "icon-juxing",
+            "color": "#ACB3BD",
+            "content": "Offline"
+        },
+        {
+            "icon": "icon-hangshizhong",
+            "color": "#4F72EB",
+            "content": "Running"
+        },
+        {
+            "icon": "icon-Idle",
+            "color": "#4F72EB",
+            "content": "Idle"
+        },
+        {
+            "icon": "icon-Arrived",
+            "color": "#4F72EB",
+            "content": "Arrived"
+        },
+        {
+            "icon": "icon-waiting",
+            "color": "#FAC35E",
+            "content": "Waiting"
+        }
+    ],
+    "state": [
+        {
+            "icon": "icon-Aligned",
+            "color": "#FAC35E",
+            "content": "Aligning"
+        },
+        {
+            "icon": "icon-Aligned",
+            "color": "#72EC57",
+            "content": "Aligned"
+        },
+        {
+            "icon": "icon-trucklocked",
+            "color": "#FAC667",
+            "content": "Trucklocked"
+        },
+        {
+            "icon": "icon-a-stopped2",
+            "color": "#F66769",
+            "content": "Stopped"
+        },
+        {
+            "icon": "icon-Estop",
+            "color": "#F66769",
+            "content": "Estop"
+        }
+    ]
+}

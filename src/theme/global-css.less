@@ -1,0 +1,99 @@
+@import url(../theme/mixin.less);
+@themeColorAnimation: all 1s ease 0s;
+@cardScaleAnimation: scale(1.03);
+
+//dev与monitor重复部分
+:global {
+    .ant-notification-notice.MonitorNotBox {
+        right: 360% !important;
+        top: 50% !important;
+        bottom: 0 !important;
+        transform: translate(0%, -50%);
+    }
+    .ant-message-notice.MonitorNotBox:first-child {
+        margin-top: 130px;
+    }
+    .ant-notification-notice.faultNotBox,
+    .ant-notification-notice.powerNotBox,
+    .ant-message-notice.MonitorNotBox > .ant-message-notice-content {
+        min-width: 222px;
+        width: auto;
+        height: 46px;
+        background: rgba(199, 209, 220, 0.5);
+        border-radius: 8px;
+        border: 1px solid rgba(179, 200, 231, 0.8);
+        padding: 0 15px;
+        line-height: 46px;
+
+        .ant-notification-notice-with-icon,
+        .ant-message-custom-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .ant-notification-notice-close,
+        .ant-notification-notice-message {
+            display: none;
+        }
+
+        .ant-notification-notice-description,
+        .ant-message-custom-content {
+            font-size: 16px;
+            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+            font-weight: 400;
+            color: #0f151d;
+        }
+    }
+    .ant-notification-notice.powerNotBox {
+        .ant-notification-notice-close {
+            display: block;
+            line-height: 15px;
+            margin-right: -10px;
+        }
+    }
+}
+
+//动态字号大小
+.fontSmall {
+    font-size: 20px !important;
+}
+
+.fontMiddle {
+    font-size: 30px !important;
+}
+
+.fontLarge {
+    font-size: 40px !important;
+}
+
+.autoNumber.fontSmall {
+    font-size: 18px !important;
+}
+
+.autoNumber.fontMiddle {
+    font-size: 20px !important;
+}
+
+.autoNumber.fontLarge {
+    font-size: 30px !important;
+}
+
+.poNumber.fontSmall {
+    font-size: 18px !important;
+    margin-left: 5px !important;
+}
+
+.poNumber.fontMiddle {
+    font-size: 20px !important;
+    margin-left: 10px !important;
+}
+
+.poNumber.fontLarge {
+    font-size: 30px !important;
+    margin-left: 20px !important;
+}
+
+.opNumber {
+    font-size: 26px !important;
+}

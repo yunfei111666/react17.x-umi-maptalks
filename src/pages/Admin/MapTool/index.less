@@ -1,0 +1,97 @@
+.map {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+// .maptalks-toolbar-horizonal li .maptalks-dropMenu li {
+//     width: 175px !important;
+// }
+.colorPicker {
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    z-index: 9999;
+    display: none;
+}
+.colors {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url(../../../assets/images/admin/colors.png) no-repeat;
+    background-size: 100%;
+}
+.showColorPicker {
+    display: block;
+}
+.mapLeftTool {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            width: 65px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: center;
+            cursor: pointer;
+            span {
+                color: #404856;
+            }
+            div {
+                font-size: 12px;
+                font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                font-weight: 400;
+                color: #2a2a2a;
+            }
+        }
+    }
+}
+.viewType {
+    position: absolute;
+    top: 15px;
+    left: 75px;
+    width: 152px;
+    padding: 5px 0px;
+    background: #ffffff;
+    box-shadow: 0px 2px 16px 2px rgba(176, 179, 181, 0.39);
+    border-radius: 8px;
+    .viewRow {
+        height: 28px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(206, 206, 206, 0.5);
+        }
+    }
+
+    .iconStyle {
+        padding-left: 8px;
+        color: #91959c;
+    }
+    .iconStyleDian {
+        transform: scale(0.5);
+    }
+    .viewTypeName {
+        padding-left: 10px;
+        font-size: 14px;
+        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+        font-weight: 400;
+        color: #2a2a2a;
+    }
+}
+.defaultSelect {
+    background: rgba(216, 216, 216, 0.54);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+.lockJson {
+    width: 100%;
+    height: 500px;
+    border: none;
+    resize: none;
+    background-color: rgba(92, 92, 92, 0.1);
+}

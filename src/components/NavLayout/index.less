@@ -1,0 +1,322 @@
+@import '../../theme/mixin.less';
+@import '../../theme/global-css.less';
+@navWitdh: 288px;
+@navCollapsedWidth: 100px;
+
+.navlayout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: @sider-bg-color;
+    transition: @themeColorAnimation;
+    .navList {
+        width: @navWitdh;
+        height: 100%;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+
+        .logo {
+            height: 80px;
+            // font-size: 30px;
+            color: @sider-logo-font-color;
+            font-weight: 700;
+            padding-left: 60px;
+            line-height: 80px;
+            animation: showName 1s ease 1;
+        }
+
+        .navItem {
+            height: 64px;
+            line-height: 64px;
+            cursor: pointer;
+
+            .antLayoutSider {
+                flex: 0 0 320;
+            }
+
+            .icon {
+                float: left;
+                color: @sider-font-default-color;
+                font-size: 18px;
+                animation: showName 1s ease 1;
+            }
+            a {
+                color: @sider-font-default-color;
+            }
+            p {
+                display: none;
+            }
+            .hoverTitle {
+                width: 100px;
+                height: 64px;
+                position: absolute;
+            }
+        }
+        .selectedItem {
+            .iconStyle {
+                color: @sider-icon-light-color!important;
+                font-size: 20px !important;
+            }
+
+            p {
+                position: absolute;
+                top: 10px;
+                left: 0px;
+                width: 8px;
+                height: 44px;
+                background: @sider-bg-light-left-bd-color;
+                border-radius: 0px 8px 8px 0px;
+                display: block;
+            }
+
+            // .iconfont {
+            //     color: @sider-icon-light-color;
+            //     font-size: 18px;
+            // }
+            .name {
+                color: @sider-font-light-color;
+                font-weight: 500;
+            }
+        }
+        .name {
+            color: @sider-font-default-color;
+            font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+
+            font-size: 18px;
+        }
+        .collapsedButton {
+            position: absolute;
+            bottom: 46px;
+            left: 60px;
+            cursor: pointer;
+
+            span svg {
+                height: 23.5px;
+                width: 27.5px;
+                color: @sider-collapsed-btn-font-color;
+            }
+        }
+    }
+    .navCollapsedList {
+        width: @navCollapsedWidth;
+        height: 100%;
+        position: relative;
+        transition: all 0.2s ease;
+
+        .logo {
+            height: 80px;
+            color: @sider-logo-font-color;
+            font-weight: 700;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .selectedItem {
+            background: @sider-bg-light-color;
+            position: relative;
+
+            .iconStyle {
+                color: @sider-icon-light-color;
+                font-size: 20px !important;
+            }
+
+            p {
+                position: absolute;
+                top: 10px;
+                left: 0px;
+                width: 8px;
+                height: 44px;
+                background: @sider-bg-light-left-bd-color;
+                border-radius: 0px 8px 8px 0px;
+                display: block;
+            }
+
+            .icon {
+                color: @sider-icon-light-color;
+                font-size: 18px;
+            }
+
+            .name {
+                color: @sider-font-light-color;
+                font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+            }
+        }
+
+        .collapsedButton {
+            position: absolute;
+            bottom: 46px;
+            left: 40px;
+            cursor: pointer;
+
+            span svg {
+                height: 23.5px;
+                width: 27.5px;
+                color: @sider-collapsed-btn-font-color;
+            }
+        }
+    }
+    .layoutBox {
+        width: calc(100% - @navWitdh);
+        height: 100%;
+        background-color: var(--bg-contont-color, #f4f6f8);
+        transition: @themeColorAnimation;
+        .boxHeader {
+            width: 100%;
+            height: 80px;
+            .pageName {
+                float: left;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 80px;
+                padding-left: 48px;
+                color: var(--tab-font-default-color, #404856);
+            }
+            .spaceRight {
+                float: right;
+                line-height: 80px;
+                padding-right: 48px;
+            }
+        }
+
+        .boxContent {
+            width: 100%;
+            height: calc(100% - 128px);
+            padding: 0px 48px;
+        }
+
+        .boxFooter {
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            color: var(--tab-font-default-color, #404856);
+        }
+    }
+    .layoutCollapsedBox {
+        // flex: 1;
+        width: calc(100% - @navCollapsedWidth);
+        height: 100%;
+        background-color: var(--bg-contont-color, #f4f6f8);
+        transition: @themeColorAnimation;
+        .boxHeader {
+            width: 100%;
+            height: 80px;
+            .pageName {
+                float: left;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 80px;
+                padding-left: 48px;
+                color: var(--tab-font-default-color, #404856);
+            }
+
+            .spaceRight {
+                float: right;
+                line-height: 80px;
+                padding-right: 48px;
+            }
+        }
+
+        .boxContent {
+            width: 100%;
+            height: calc(100% - 128px);
+            padding: 0px 48px;
+        }
+
+        .boxFooter {
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            color: var(--tab-font-default-color, #404856);
+        }
+    }
+    :global {
+        .subIconfont {
+            color: @sider-icon-default-color;
+            font-size: 20px !important;
+        }
+        .ant-menu-item-selected {
+            background-color: @sider-bg-light-color!important;
+            .iconStyle {
+                color: @sider-font-light-color!important;
+                font-size: 20px !important;
+            }
+        }
+        .ant-menu-submenu-open {
+            .subIconfont,
+            .ant-menu-title-content {
+                color: @sider-font-light-color!important;
+                // font-weight: 500;
+            }
+        }
+        .ant-menu.ant-menu-dark,
+        .ant-menu-sub {
+            background: none !important;
+        }
+
+        .firstMenu.ant-menu-item {
+            padding-left: 80px !important;
+            height: 64px !important;
+            line-height: 64px !important;
+        }
+        .subMenu {
+            padding-left: 53px !important;
+            .ant-menu-submenu-title {
+                height: 64px !important;
+                line-height: 64px !important;
+                padding-left: 1.4vw !important;
+            }
+            .ant-menu-item {
+                padding-left: 40px !important;
+                .iconfont {
+                    margin-right: 10px;
+                }
+            }
+            .ant-menu-title-content {
+                font-size: 18px;
+                color: @sider-font-default-color;
+                animation: showName 1s ease 1;
+                font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                display: flex;
+            }
+        }
+
+        .ant-menu-submenu-arrow::before,
+        .ant-menu-submenu-arrow::after {
+            background: @sider-font-default-color!important;
+        }
+        .ant-layout-sider,
+        .ant-layout-sider-trigger {
+            background: none !important;
+        }
+        .name {
+            color: @sider-font-default-color;
+            font-size: 18px;
+            animation: showName 1s ease 1;
+            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+            font-weight: 400;
+        }
+        .iconStyle {
+            color: @sider-icon-default-color;
+            font-size: 20px !important;
+        }
+        .secondMenu .ant-menu-title-content .navItem {
+            height: 48px;
+            line-height: 48px;
+        }
+        .anticon svg {
+            fill: @sider-icon-default-color;
+        }
+        .ant-menu-item-selected {
+            background: @sider-bg-light-color;
+        }
+    }
+}
+
+@keyframes showName {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

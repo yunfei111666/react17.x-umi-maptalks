@@ -1,0 +1,273 @@
+@import url(../../../../theme/mixin.less);
+.notData {
+    width: 540px;
+    height: 250px;
+}
+.subviewMargin {
+    margin: 0 8px;
+}
+
+.popoverApiCon {
+    width: 540px;
+    background: @dev-popover-bg-color;
+    border-radius: 8px;
+    position: relative;
+    .formTitle {
+        font-size: 14px;
+        text-align: left;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+        font-weight: 500;
+        color: @dev-form-font-color;
+        line-height: 21px;
+        margin: 16px 0 11px;
+    }
+    .filesUpload {
+        margin: 5px 8px;
+        .fileStyle {
+            width: 524px;
+            color: @dev-side-icon-light-color;
+            background: @dev-form-input-bg-color;
+            border: 1px solid @dev-tag-bg-color;
+        }
+    }
+    .TOfmsWidth {
+        input[type='text'] {
+            // width: 240px;
+        }
+    }
+    .right {
+        list-style: none;
+        height: calc(100% - 2px);
+        width: 100px;
+        padding: 0;
+        margin: 0;
+        background: @dev-tag-bg-color;
+        border-radius: 4px 0px 8px 4px; //4px 0px 0px 4px;
+        float: right;
+        li {
+            height: 28px;
+            border-radius: 4px 0px 0px 4px;
+            line-height: 28px;
+            text-align: center;
+            &:hover {
+                cursor: pointer;
+            }
+            span {
+                display: block;
+                width: 110%;
+                margin: 0 -5%;
+                font-size: 12px;
+                text-align: center;
+                transform: scale(0.83);
+                font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                font-weight: 400;
+                color: @dev-tag-font-color;
+            }
+            &.active {
+                background: #a3c9ff !important;
+                border-radius: 4px 0px 0px 4px !important;
+                span {
+                    color: #fefeff !important;
+                }
+            }
+        }
+    }
+    .leftCon {
+        width: calc(100% - 100px);
+    }
+    .public {
+        padding-left: 25px;
+        border-bottom: 1px solid @dev-popover-bd-color;
+    }
+    .other {
+        padding-left: 16px;
+        padding-top: 18px;
+        margin-right: 20px;
+    }
+    .releaseBtn {
+        width: 64px;
+        height: 32px;
+        background: #5098ff;
+        box-shadow: 0px 2px 6px 0px @dev-form-btn-bs-color;
+        border-radius: 4px;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto 15px;
+        font-size: 14px;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+        font-weight: 500;
+        color: rgba(253, 253, 253, 0.85);
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .smallBtn {
+        width: 56px;
+        height: 24px;
+        background: #5098ff;
+        box-shadow: 0px 2px 6px 0px @dev-form-btn-bs-color;
+        border-radius: 4px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+        font-weight: 500;
+        color: rgba(253, 253, 253, 0.85);
+        line-height: 24px;
+        display: table-cell;
+        outline: none;
+        border: 0px;
+        margin-left: 14px;
+    }
+    .bottom {
+        padding: 17px 0 85px 33px;
+        border-top: 1px solid @dev-popover-bd-color;
+    }
+    :global {
+        #public,
+        #other,
+        #signal,
+        #log {
+            .ant-row {
+                margin-bottom: 15px;
+                .ant-form-item-explain-error {
+                    position: absolute;
+                    bottom: -20px;
+                    height: 20px;
+                    font-size: 12px;
+                    z-index: 9;
+                }
+            }
+            .ant-select-arrow .anticon > svg {
+                color: #a2a4a8;
+            }
+            .ant-form-item-control-input {
+                min-height: 0px;
+            }
+            .ant-form-item-control {
+                input[type='text'] {
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 12px;
+                    border-radius: 4px;
+                    background: @dev-form-input-bg-color;
+                    border: 1px solid @dev-form-input-bd-color;
+                    color: @dev-form-font-color;
+                }
+                textarea {
+                    width: 270px;
+                    height: 80px;
+                    font-size: 12px;
+                    background: @dev-form-input-bg-color;
+                    border-radius: 4px;
+                    line-height: 24px;
+                    border: 1px solid @dev-form-input-bd-color;
+                }
+                .ant-select {
+                    .ant-select-selector {
+                        height: 24px;
+                        border-radius: 4px;
+                        background: @dev-form-input-bg-color;
+                        border: 1px solid @dev-form-input-bd-color;
+                        .ant-select-selection-item {
+                            line-height: 22px;
+                            font-size: 12px;
+                            max-width: 170px;
+                            display: inline-block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            color: @dev-form-font-color;
+                        }
+                        .ant-select-selection-placeholder {
+                            line-height: 25px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .ant-form-item-label {
+            text-align: left;
+            width: 87px;
+            height: 24px;
+            label {
+                height: 24px;
+                font-size: 14px;
+                font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                font-weight: 400;
+                color: @dev-form-font-color;
+                line-height: 24px;
+            }
+        }
+        .ant-tabs-top
+            > .ant-tabs-nav
+            .ant-tabs-nav-wrap.ant-tabs-nav-wrap-ping-right::after {
+            display: none;
+        }
+        .ant-tabs {
+            .ant-tabs-nav {
+                height: 48px;
+                background: @dev-tab-bg-color;
+                border-radius: 15px 15px 0px 0px;
+                padding: 0 25px;
+                width: 100%;
+                margin-bottom: 0px;
+                &::before {
+                    border-bottom: 0;
+                }
+                .ant-tabs-nav-list {
+                    width: 100%;
+                    .ant-tabs-tab-btn {
+                        font-size: 14px;
+                        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                        font-weight: 500;
+                        color: @dev-tab-font-color;
+                        line-height: 22px;
+                    }
+                    .ant-tabs-ink-bar {
+                        height: 3px;
+                        background: #418fff;
+                    }
+                }
+                .ant-tabs-tab + .ant-tabs-tab {
+                    margin-left: 35px;
+                }
+            }
+        }
+        #log {
+            .ant-form-item {
+                margin-bottom: 0px;
+            }
+            .ant-form-item-label {
+                width: 46px;
+                margin-right: 10px;
+            }
+        }
+        #signal {
+            .ant-form-item-label {
+                width: 93px;
+            }
+        }
+        .logInput {
+            .ant-form-item-label {
+                width: 46px !important;
+                margin-right: 10px !important;
+            }
+            textArea {
+                height: 50px !important;
+            }
+        }
+        .jsonLable {
+            .ant-form-item-label {
+                width: 160px !important;
+            }
+        }
+        .bigLog {
+            textArea {
+                height: 110px !important;
+            }
+        }
+    }
+}

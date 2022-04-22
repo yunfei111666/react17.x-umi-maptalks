@@ -1,0 +1,552 @@
+{
+    "data": [
+        {
+            "time": "2022年3月31日",
+            "title": "v1.0.6",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "2D岸桥上展示编号"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "登录权限启用微服务"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "压缩静态图片资源文件"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复页面重定向"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改视频展示"
+                }
+            ]
+        },
+        {
+            "time": "2022年3月24日",
+            "title": "v1.0.5",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增雨天intensity 修复取消控车操作问题"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "展示堆高机"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "场桥位置校对"
+                }
+            ]
+        },
+        {
+            "time": "2022年3月10日",
+            "title": "v1.0.4",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "宁波3D模式下展示场桥"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增单车远程重定位 显示pcd点云地图"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增单车监控、引导控车按钮级权限"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增运营纪录删除功能"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "调整3d岸桥模型大小"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改运营数据"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "优化菜单UI"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "效率统计表头加单位 修复搜索功能"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改运营记录表单校验规则 优化事件时间、接管时长等"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "优化各港口配置信息"
+                }
+            ]
+        },
+        {
+            "time": "2022年3月3日",
+            "title": "v1.0.3",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增展示场桥"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增人工派发停车指令"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增禁行区域、禁行列表模块（新增、编辑、删除禁行区域功能）"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "菜单重构 划分二级菜单"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增组件权限控制"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增对位信息按需配置"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增实时动态模块 实时显示所有车辆详情信息及可批量下发指令"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "重构效率统计页面UI 新增按车辆编号搜索功能、查看车辆历史统计详情弹框"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "重构车辆档案页面UI,修改查看功能 新增车辆档案批量删除"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "调整单车监控页面"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "调整首页UI"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "调整全局table表格UI"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "调整车辆出勤页面UI"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复运营、自动驾驶等数据文字超出显示问题"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复集卡模型 去掉3D测试场桥、船"
+                }
+            ]
+        },
+        {
+            "time": "2022年2月10日",
+            "title": "v1.0.2",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增运营纪录页面"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增运营记录页新增模块、修改查看模块"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增单车详情页录包模块及功能"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增单车详情页清除底盘故障指令"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改剩余里程字段"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复车辆列表状态不更新问题"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "删除开发日志"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复权限控制兼容url传参"
+                }
+            ]
+        },
+        {
+            "time": "2022年1月27日",
+            "title": "v1.0.1",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "登录账号访问权限控制"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "404，无权限落地页"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "车辆调度功能"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复在首页手动删除token时，刷新报错的问题"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "socket节流错误"
+                }
+            ]
+        },
+        {
+            "time": "2022年1月20日",
+            "title": "v1.0.0",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "单车详情图片流占位符 "
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "海面自定义设计功能 "
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "锁站自定义设计功能"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "单车详情窗口化（支持拖拽及打开新页面）"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "静态资源（图片、字体等）压缩，提升加载速度"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "模型资源预加载减少性能开销"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "各类模型优化，模型顶点减少60%"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "事件更新节流处理"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "代码重构，抽取公共部分封装及优化"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "webpack配置优化，开启gzip压缩，减少打包体积大小"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "解决Monitor模块全屏卡顿问题"
+                }
+            ]
+        },
+        {
+            "time": "2022年01月06日",
+            "title": "v1.0.6 Beta",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "重构车辆列表,调整布局及字体大小,表头添加车辆总数,在线及故障车辆数"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "去除车辆列表关闭按钮改为点击侧边栏实现开关"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "打开车辆列表，默认搜索输入框获取光标热点"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "单车详情加停车精度字段"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "车辆列表定位、追踪按钮改为icon"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "trunk monitor车辆信息去掉TOS字段增加速度字段，修改表头信息"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "优化trunkmonitor主页面数字字号"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改首次登陆默认进行极简模式"
+                }
+            ]
+        },
+        {
+            "time": "2021年12月30日",
+            "title": "v1.0.5 Beta",
+            "list": [
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改历史统计页导出接口"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改历史故障统计百分比显示问题,故障信息查询失败问题"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改车号字体颜色"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改在线和离线状态变化时车体也跟着变化"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改车辆列表中状态字段"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改车号和堆场字体随着地图放大字体变小问题"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改在线离线车辆重叠时层级问题"
+                }
+            ]
+        },
+        {
+            "time": "2021年12月23日",
+            "title": "v1.0.4 Beta",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "故障列表新加输入框可以输入车号查询故障车辆"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "优化打点控车,解决打点时模型加载失败问题"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "车辆列表中对选中车辆进行排序"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改离线车辆车号高亮，恢复在线后，车号是灰的"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修改深色主题下单车页的控车输入框颜色为白色"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "深色主题下离线车辆颜色更换"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "堆场字体放大、缩放"
+                }
+            ]
+        },
+        {
+            "time": "2021年12月16日",
+            "title": "v1.0.3 Beta",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "车辆列表加停车精度，选中车辆提前排序"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "TrunkMonitor 运营数据按需配置"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "电量报警低于30%提示强度不够,做成边侧弹窗"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "单车状态显示不正确（油门开度、车辆状态、转向）"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "离线车辆颜色有点深，尽可能的降低点颜色，车号"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "故障详情字体建议增大，方便查看"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "堆场字体放大、缩放"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "控车方案修改"
+                }
+            ]
+        },
+        {
+            "time": "2021年12月02日",
+            "title": "v1.0.2 Beta",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "新增用户权限分区显示(非root的用户无法进入admin与dev界面)"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "电量低于30%,语音报警提示充电"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "车辆列表选中，控制车辆显示"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "历史统计页面UI调整，故障类型与C段一致"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复车辆详情参数油门开合"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复车辆详情参数转向灯"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复车辆详情档位信息"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复车辆详情参数显示过长"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "修复车辆详情参数在线状态"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "车辆详情障碍物颜色修改"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "车辆详情 点云转弯显示"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "车辆详情 车号颜色修改"
+                }
+            ]
+        },
+        {
+            "time": "2021年11月25日",
+            "title": "v1.0.1 Beta",
+            "list": [
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "控车（地图打点控车，精准控车 两套方案）"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "车辆列表新增【车速】字段"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "车辆列表查询"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "单车详情地图增加静态障碍物点展示"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "单车详情地图视野选择"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "地图工具添加视野选择（鸟瞰，俯视）"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "地图显示锁站 锁岛 3D 模型"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "Dev/车辆列表-定位-特效"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "Dev/极简和性能模式，增加车辆模型在线，离线状态"
+                },
+                {
+                    "icon": "icon-xinzeng",
+                    "content": "浏览器更换logo"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "岸桥位置与车辆位置与实际现场不符合"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "屏幕车辆列表空白处较多"
+                },
+                {
+                    "icon": "icon-xiufu",
+                    "content": "车辆列表页面缩放 UI 变形"
+                }
+            ]
+        },
+        {
+            "time": "2021年11月16日",
+            "title": "v1.0.0 Beta",
+            "list": [
+                {
+                    "icon": "",
+                    "content": "TrunkFace 全新设计包含TrunkAdmin、TrunkMonitor、TrunkDev"
+                },
+                {
+                    "icon": "",
+                    "content": "TrunkAdmin 港口配置 车辆管理 历史统计等"
+                },
+                {
+                    "icon": "",
+                    "content": "TrunkMonitor 运营数据监控平台"
+                },
+                {
+                    "icon": "",
+                    "content": "TrunkDev 测试运营专属工具"
+                }
+            ]
+        }
+    ]
+}

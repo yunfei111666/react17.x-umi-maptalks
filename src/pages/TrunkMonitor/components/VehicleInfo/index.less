@@ -1,0 +1,157 @@
+.content {
+    padding: 24px 20px;
+    height: calc(100% - 45px);
+    .tags {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        span {
+            color: #dee2f4;
+            // flex: 1;
+            // width: 33.33%;
+            font-size: 14px;
+            font-family: 'SiYuan';
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 1px;
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: rgba(0, 187, 255, 1);
+                border-radius: 50%;
+                margin-right: 4px;
+            }
+        }
+        span:nth-child(2) {
+            &:before {
+                background: rgba(0, 255, 56, 1);
+            }
+        }
+        span:nth-child(3) {
+            &:before {
+                background: rgba(255, 7, 7, 1);
+            }
+        }
+    }
+    .search {
+        width: 100%;
+        height: 8%;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        //覆盖antd默认样式
+        :global {
+            //input样式
+            .ant-input {
+                background-color: rgba(10, 27, 90, 0.6);
+                color: rgba(255, 255, 255, 0.85);
+                border-color: #519aff;
+                border-radius: 8px;
+                height: 36px;
+                line-height: 36px;
+            }
+            .ant-input::-webkit-input-placeholder {
+                color: rgba(255, 255, 255, 0.4);
+            }
+            .ant-input::-moz-input-placeholder {
+                color: rgba(255, 255, 255, 0.4);
+            }
+            .ant-input::-ms-input-placeholder {
+                color: rgba(255, 255, 255, 0.4);
+            }
+            .ant-input-group {
+                color: #fff;
+            }
+            .ant-input-group-addon {
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .ant-input-group-addon > .ant-btn {
+                background-color: rgba(10, 27, 90, 0.6);
+                border-color: #519aff;
+                border-radius: 0 8px 8px 0 !important;
+                color: rgba(255, 255, 255, 0.85);
+                height: 36px;
+                // margin-top: -1px;
+            }
+            .ant-input-search .ant-input:hover,
+            .ant-input-search .ant-input:focus {
+                color: #fff;
+            }
+        }
+    }
+    .carTable {
+        height: calc(100% - 50px);
+        :global {
+            //table样式
+            .ant-table-thead > tr > th {
+                background: rgba(56, 150, 255, 0.1);
+                color: #fff;
+                border: none;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                padding: 10px;
+            }
+            .ant-table {
+                // width: 110%;
+                width: 100%;
+                height: 100%;
+                /* background: #192f6b; */
+                background: #0c2265; //#050f44;
+                color: white;
+                font-size: 12px;
+                border: none;
+                border-radius: 8px;
+            }
+            .ant-empty-description {
+                color: #becbe9; //var(--tab-font-default-color, #46484b);
+            }
+            .ant-table-wrapper,
+            .ant-spin-nested-loading,
+            .ant-spin-container,
+            .ant-table-container {
+                height: 98%;
+                overflow: hidden;
+            }
+            .ant-table-body {
+                max-height: 88% !important;
+                overflow: auto !important;
+            }
+            .ant-table-tbody {
+                height: 100%;
+                overflow-y: auto;
+                tr {
+                    td {
+                        border: none;
+                        padding: 10px;
+                        font-size: 14px;
+                        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                        font-weight: 400;
+                        color: #dee2f4;
+                    }
+                    &.ant-table-placeholder:hover {
+                        td {
+                            background: #0c2265;
+                        }
+                    }
+                    &.ant-table-row:hover > td {
+                        background: rgba(56, 150, 255, 0.1);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .ant-table-tbody > .ant-table .ant-table-container::before,
+            .ant-table .ant-table-container::after {
+                display: none;
+            }
+        }
+    }
+}
+.box {
+    height: 55%; //45.3703703%; //49%;
+}
+.boxs {
+    height: 98%; //45.3703703%; //49%;
+}

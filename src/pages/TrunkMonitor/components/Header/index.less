@@ -1,0 +1,141 @@
+.header {
+    width: 100%;
+    padding: 0 30px;
+    height: 80px;
+    color: #fff;
+    font-family: 'SiYuan';
+    background: url(../../../../assets/images/monitor/header.jpg) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    .logo {
+        width: 30%;
+        img {
+            width: 320px;
+        }
+    }
+    .title {
+        width: 40%;
+        flex: 1;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 80px;
+        text-align: center;
+        letter-spacing: 4px;
+    }
+    .right {
+        font-size: 18px;
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+        width: 30%;
+        position: relative;
+        .pointer {
+            cursor: pointer;
+        }
+        .time {
+            font-weight: 400;
+            letter-spacing: 1px;
+            width: 230px;
+            display: flex;
+            div:first-child {
+                padding-right: 10px;
+            }
+        }
+        a {
+            color: #fff;
+        }
+        i {
+            font-size: 20px;
+            margin: -2px 0 0 19px;
+            display: inline-block;
+        }
+        //覆盖antd默认样式
+        :global {
+            .ant-badge {
+                color: #fff;
+                margin-top: 5px;
+                &:hover {
+                    cursor: pointer;
+                }
+                i {
+                    font-size: 20px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+.bt {
+    border-bottom: 2px solid #384a7c;
+}
+.bg {
+    background: rgba(32, 54, 113, 0.9);
+}
+.warn {
+    color: #feba0a;
+}
+.error {
+    color: #ff0a0a;
+}
+.alarmModal {
+    :global {
+        .ant-modal-header {
+            .bg();
+            .bt();
+            padding: 23px 25px 16px;
+            .ant-modal-title {
+                font-size: 20px;
+                font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                font-weight: 500;
+                color: #eef5ff;
+                line-height: 32px;
+            }
+        }
+        .ant-modal-body {
+            padding: 0 0 16px;
+            .ant-btn {
+                height: auto;
+            }
+            .ant-btn-text,
+            .ant-radio-wrapper {
+                color: #eef5ff;
+                font-size: 14px;
+                .icon-dituxiafa {
+                    font-size: 14px;
+                    padding-right: 5px;
+                }
+            }
+            .ant-btn-text.active {
+                background: #4e6cb8;
+                border-radius: 6px;
+            }
+        }
+        .ant-modal-content {
+            .bg();
+            box-shadow: 0px 6px 14px 4px #141e2a !important;
+            .ant-modal-close {
+                top: 10px;
+                right: 5px;
+                .ant-modal-close-x {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        color: #eef5ff;
+                    }
+                }
+            }
+            .ant-checkbox-wrapper {
+                color: #eef5ff;
+                float: right;
+                //margin: -10px 0 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .time {
+        width: 155px !important;
+    }
+}

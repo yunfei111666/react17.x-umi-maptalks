@@ -1,0 +1,85 @@
+@import url(../../../../theme/mixin.less);
+
+.popoverCarCon {
+    width: 332px; //370px;
+    background: @dev-popover-bg-color;
+    border-radius: 8px;
+    padding: 16px 18px;
+    .title {
+        font-size: 14px;
+        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+        font-weight: 400;
+        color: @dev-form-font-color;
+        line-height: 22px;
+    }
+    .item {
+        input{
+            height:32px;
+            line-height:32px;
+            color:@dev-table-font-color;
+            background-color:transparent;
+            border-color:@dev-table-bd-color;
+        }
+        textarea{
+            color:@dev-table-font-color;
+            background-color:transparent;
+            border-color:@dev-table-bd-color;
+        }
+        display: flex;
+        // justify-content: space-between;
+        margin-bottom: 14px;
+        .arrowWraper{
+            width:24px;
+            height:32px;
+            // background:#f5f5f5;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border:1px solid @dev-table-bd-color;
+            border-left:0;
+            div{
+                width:0px;
+                height:0px;
+                border:6px solid transparent;
+                cursor: pointer;
+            }
+            .line{
+                width:100%;
+                height:1px;
+                background:#D1D8E3;
+                padding:0;
+                margin:0;
+            }
+            .arrowBottom{
+                border-top-color: #D1D8E3;
+            }
+            .arrowTop{
+                border-bottom-color: #D1D8E3;
+            }
+        }
+        .step{
+            margin-left:20px;
+            display: flex;
+            .inputNumber{
+                width:50px;
+                height:32px;
+                background-color:transparent;
+                border-color:@dev-table-bd-color;
+            }
+            .text{
+                color: @dev-table-font-color;
+                
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+    }
+    .btnRow{
+        display: flex;
+        justify-content: space-around;
+        margin-top:20px;
+    }
+}

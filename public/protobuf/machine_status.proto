@@ -1,0 +1,23 @@
+// [START declaration]
+syntax = "proto3";
+// [END declaration]
+import "google/protobuf/timestamp.proto";
+import "point.proto";
+// [START messages]
+
+
+message MachineStatus{
+    string name = 1; // 主键，ACT Id号
+    string type = 2; //	在TOS中是否出勤
+                        //  YES
+                        //  NO
+    string operational_status =	3; // 机械操作状态
+                                    // 在线 ''
+                                    // 下线
+    string is_top =	4; // 用于展示控制上下
+                        // YES
+                        // NO
+    Point point = 5; // 当前坐标点
+    google.protobuf.Timestamp created =	6;	// 创建时间
+    google.protobuf.Timestamp updated =	7;	// 创建时间
+}

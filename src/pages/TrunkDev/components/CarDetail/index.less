@@ -1,0 +1,105 @@
+@import url(../../../../theme/mixin.less);
+
+.detailBox {
+    width: 100%;
+    height: 100%;
+
+    .right {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        button {
+            margin-left: 20px;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0px 2px 6px 0px #bcc9d5;
+            i {
+                font-size: 22px;
+                color: #5098ff;
+            }
+        }
+    }
+    .title {
+        font-size: 30px;
+        font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+        font-weight: 800;
+        // color: @dev-head-font-color;
+        letter-spacing: 5px;
+        float: left;
+        margin-right: 15px;
+    }
+    .headmsg {
+        font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+        float: left;
+    }
+    :global {
+        .ant-row {
+            height: 100%;
+        }
+        .ant-layout-header {
+            background: #f6fbff;
+            box-shadow: 0px 2px 8px 6px rgba(78, 87, 96, 0.16);
+        }
+        .ant-layout-content {
+            max-height: calc(100% - 64px) !important;
+        }
+    }
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 2px 7px 4px rgba(82, 82, 82, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.vdflag {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 999;
+    span {
+        margin: 0 10px;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+}
+.leftbox {
+    width: 100%;
+    height: 100%;
+}
+.rightbox {
+    width: 18%;
+    height: 100%;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    button {
+        margin-left: 10px;
+    }
+}
+.fileDiv {
+    :global {
+        .ant-table table .ant-table-thead > tr > th,
+        .ant-table-tbody > tr > td {
+            text-align: left;
+        }
+    }
+}

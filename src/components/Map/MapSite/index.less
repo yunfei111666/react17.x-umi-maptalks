@@ -1,0 +1,99 @@
+@import url(../../../theme/mixin.less);
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+.ui-marker {
+    width: 10px;
+    height: 37px;
+}
+.popover {
+    position: absolute;
+    width: 236px;
+    left: calc(50% - 118px);
+    top: 25%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 2px @dev-popover-bs-color;
+    background: @dev-popover-bg-color;
+    z-index: 99;
+
+    .title {
+        height: 39px;
+        width: 100%;
+        padding: 7.5px 13px;
+        border-bottom: 1px solid @dev-car-title-bd-color;
+        display: block;
+
+        .text {
+            font-size: 16px;
+            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+            font-weight: 400;
+            color: @dev-popover-title-font-color;
+            line-height: 24px;
+            float: left;
+        }
+
+        i {
+            font-size: 20px;
+            color: @dev-popover-title-font-color;
+            line-height: 24px;
+            float: right;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .content:not(:last-child) {
+        border-bottom: 1px solid #e0e6eb;
+    }
+    .content {
+        padding: 8px 18px;
+        .contentBox {
+            display: flex;
+            justify-content: space-between;
+        }
+        .select {
+            width: 100%;
+        }
+
+        .carId {
+            font-size: 16px;
+            color: #0f151d;
+            line-height: 24px;
+        }
+        .parkTips {
+            font-size: 14px;
+            font-weight: 400;
+            color: #0f151d;
+            line-height: 21px;
+        }
+    }
+    .footer {
+        margin-bottom: 18px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        .carControlCancel {
+            background: #adbacc;
+            color: white;
+        }
+        .btn {
+            box-shadow: 0 2px 6px 0 #bcc9d5;
+        }
+    }
+}
+.menu {
+    width: 236px;
+}
+.box {
+    width: 236px;
+    height: 268px;
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 40%;
+    z-index: 99;
+}

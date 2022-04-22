@@ -1,0 +1,107 @@
+// [START declaration]
+syntax = "proto3";
+// [END declaration]
+import "act_jobs.proto";
+import "point.proto";
+// [START messages]
+
+message WheelSpeed{
+    double speed = 1;
+}
+
+message WheelAngle{
+    double angle = 1;
+}
+
+message WheelOdometer{
+    double pressure = 1;
+}
+
+message OgmPoint{
+    int32 type = 1;
+    double x = 2;  // x坐标
+    double y = 3;  // y坐标
+}
+
+message Wall{
+    int32 type = 1;
+}
+
+message TodayData{
+    double mileage = 1;
+    double consume_power = 2;
+    int32 align = 3;
+    double work_duration = 4;
+    double run_duration = 5;
+    double align_duration = 6;
+}
+
+message Object{
+    repeated Point points = 1;
+}
+
+message PlanningPoint{
+    double x = 1;
+    double y = 2;
+    double theta = 3;
+    int32 type = 4;
+}
+
+message PlanningResult{
+    int32 id = 1;
+    enum Response{
+      unknown = 0;
+      planning_success = 1;
+      planning_fail = 2;
+      execute_success = 3;
+      execute_fail = 4;
+    }
+    Response response = 2;
+}
+
+message World{
+    string che_id = 1; // 车号
+    double x = 2;  // che x坐标
+    double y = 3;  // che y坐标
+    double yaw = 4; // 车辆转向角
+    double odometer = 5;  // 徐工详细故障码
+    repeated WheelSpeed wheel_speed = 6;  // 轮速
+    repeated WheelOdometer wheel_odometer = 7; // 胎压
+    repeated WheelAngle wheel_angle = 8;  // 轮角
+    double gy = 9; // 总里程
+    double current_throttle = 10;  // 当前实际油门
+    double current_brake = 11;  // 当前真实刹车
+    double current_speed = 12;  // 当前真实车速
+    int32 turn_light_status = 13;  // C段目前用来做上下高压标识，1：上高压，0：下高压
+    double vehicle_error_status = 14;  // 车辆故障码
+    double emergency_stop_status = 15;  // 紧急停止状态
+    int32 auto_driver_status = 16;  // 自动驾驶状态
+    double throttle = 17;  // 期望油门
+    double brake = 18;  // 期望刹车
+    string gear = 19;  // 档位
+    double final_distance = 20;  // 距离终点距离
+    repeated Wall walls = 21; // 虚拟墙, 暂时没有
+    int32 gps_status = 22;  // gps 状态值
+    double rt_speed = 23;  // 期望速度
+    double final_speed = 24;  // 实际规划速度
+    double global_path_at = 25;  // 用于关注global_path topic时否有输出
+    double left_front_at = 26;  // 左前雷达是否正常
+    double right_front_at = 27;  // 右前雷达是否正常
+    double left_behind_at = 28;  // 用于关注左后方雷达是否正常
+    double right_behind_at = 29; // 用于关注右后方雷达是否正常
+    double planning_cmd_at = 30;  // 路径规划输出时间戳，用于关注路径规划topic是否有输出，是不是没有了
+    repeated OgmPoint ogm_points = 31;  // 静态障碍物
+    repeated Object objects = 32;  // 动态障碍物
+    string state_flow = 33;  // TPA状态
+    double soc = 34; // 剩余电量
+    bool stop = 35;  // 是否处于stop状态
+    repeated PlanningPoint planning_points = 36;  // 规划路径点
+    PlanningResult planning_result = 37;  // 规划结果
+    double updated_at = 38;  // 更新时间
+}
+
+message WorldMix{
+    World world_msg = 1; // 单车数据
+    TodayData today_data = 2;  // 今日数据
+    ActJobs job = 3;  // 车辆job信息
+}

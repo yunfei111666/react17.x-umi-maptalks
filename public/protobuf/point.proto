@@ -1,0 +1,10 @@
+// [START declaration]
+syntax = "proto3";
+// [END declaration]
+
+// [START messages]
+message Point {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+}

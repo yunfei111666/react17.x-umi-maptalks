@@ -1,0 +1,72 @@
+@import url(../../../../theme/mixin.less);
+
+.videoBox {
+    width: auto;
+    height: 100%;
+    // padding: 0 15px 30px;
+    .title {
+        width: 100%;
+        font-size: 18px;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+        font-weight: 500;
+        //color: @dev-car-title-font-color;
+        letter-spacing: 1px;
+        padding: 8px 15px;
+        box-sizing: border-box;
+        background-color: #e2e6ee;
+    }
+    .content {
+        width: 100%;
+        height: calc(100% - 44.5px);
+        margin-top: 44.5px;
+        border-left: 1px solid @dev-video-bd-color;
+        border-top: 1px solid @dev-video-bd-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .list {
+            width: 100%;
+            height: 25%;
+            padding: 5px;
+            box-sizing: border-box;
+            .top {
+                width: 100%;
+                height: 24px;
+                background: linear-gradient(
+                    270deg,
+                    rgba(222, 236, 255, 0.03) 0%,
+                    rgba(179, 208, 255, 0.36) 100%
+                );
+                font-size: 14px;
+                font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                font-weight: 400;
+                //color: @dev-video-font-color;
+                line-height: 24px;
+                padding-left: 10px;
+            }
+            .con {
+                height: calc(100% - 24px);
+                text-align: center;
+                font-size: 18px;
+                font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                font-weight: 500;
+                //color: @dev-video-font-color;
+                line-height: 27px;
+                letter-spacing: 1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #ebeef3;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .defaultImg {
+                    width: auto !important;
+                    height: 60% !important;
+                }
+            }
+        }
+    }
+}

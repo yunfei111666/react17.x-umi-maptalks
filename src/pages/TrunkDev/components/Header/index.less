@@ -1,0 +1,44 @@
+@import url(../../../../theme/mixin.less);
+
+.header {
+    width: 100%;
+    padding: 0 26px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    background: @dev-head-bg-color;
+    // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    .iconMargin {
+        margin: 0 20px;
+    }
+    .pointer {
+        cursor: pointer;
+    }
+    .title {
+        width: 716px;
+        flex: 1;
+        font-size: 30px;
+        font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+        font-weight: 800;
+        color: @dev-head-font-color;
+        line-height: 45px;
+        letter-spacing: 5px;
+    }
+    i {
+        font-size: 24px;
+        // width: 24px;
+        // height: 24px;
+        color: @dev-head-font-color;
+        // position: absolute;
+        // right: 26px;
+        // top: 10px;
+        z-index: 1000;
+    }
+}

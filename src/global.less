@@ -1,0 +1,848 @@
+// 主题配色
+@import url(./theme/theme-black.less);
+@import url(./theme/theme-white.less);
+@import url(./theme/global-css.less);
+@import url(./theme/mixin.less);
+
+@import '~antd/lib/style/themes/default.less';
+@import '~antd/dist/antd.less'; // 引入官方提供的 less 样式入口文件
+// @import 'assets/iconfont/iconfont.css';
+@import 'https://at.alicdn.com/t/font_3178361_p0ytnz08ie.css';
+// @import 'https://at.alicdn.com/t/font_2791847_faljjmtvxek.css'; //iconfont在线访问
+
+@font-face {
+    font-family: 'SiYuan';
+    src: url('assets/fonts/SourceHanSansCNRegular/Source\ Han\ Sans\ CN\ Regular.ttf');
+}
+
+html,
+body,
+#root,
+.contextBox {
+    -webkit-user-select: none;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'SiYuan';
+    .ant-layout {
+        height: 100%;
+        .ant-layout-content {
+            max-height: calc(100% - 64px - 68px);
+            overflow: auto;
+            margin: 0, 0, 0, 0;
+            padding: 20px;
+        }
+    }
+}
+
+//列表字段居中显示
+.ant-table table {
+    transition: @themeColorAnimation;
+    text-align: center;
+    .ant-table-thead > tr > th {
+        text-align: center;
+    }
+}
+
+// subview
+.subview {
+    height: 100%;
+    background: var(--tab-color, #fff);
+    border-radius: 23px;
+    .sub-tools {
+        border-radius: 23px 23px 0px 0px;
+        height: 64px;
+        line-height: 65px;
+        padding-right: 44px;
+        padding-left: 32px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: var(--table-hover-font-color, #000);
+        transition: @themeColorAnimation;
+
+        .ant-picker {
+            border: 1px solid var(--tab-color, #d9d9d9);
+            background-color: var(--input-bg-color);
+            transition: @themeColorAnimation;
+
+            .ant-picker-input > input {
+                color: var(--table-hover-font-color, #46484b);
+            }
+            .ant-picker-separator {
+                color: var(--table-hover-font-color, #b6b6b6);
+            }
+            .ant-picker-suffix {
+                color: var(--table-hover-font-color, #b6b6b6);
+            }
+            .ant-picker-clear {
+                background: var(--input-bg-color, #fff);
+                color: var(--tab-font-default-color, #46484b);
+                &:hover {
+                    color: var(--tab-font-default-color, #46484b);
+                }
+            }
+        }
+        button {
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+            font-weight: 500;
+            color: rgba(253, 253, 253, 0.85);
+        }
+        div .ant-input {
+            background-color: var(--input-bg-color, #fff);
+            color: var(--white-font-color, #000);
+            border: 1px solid var(--tab-icon-default-color, #d9d9d9);
+            transition: @themeColorAnimation;
+        }
+    }
+    .sub-container {
+        height: calc(100% - 64px);
+        overflow: hidden;
+        border-top: 1px solid var(--table-head-color, #dbdbdb);
+        transition: @themeColorAnimation;
+        border-radius: 0 0 23px 23px;
+
+        #map {
+            background-color: var(--table-head-color, #fff);
+            transition: @themeColorAnimation;
+        }
+        ul {
+            li {
+                span {
+                    color: var(--map-white-font-color, #404856);
+                }
+                div {
+                    color: var(--map-white-font-color, #404856);
+                }
+            }
+        }
+
+        .baseViewType {
+            background-color: var(--table-head-color, #fff);
+            .ant-row {
+                .ant-col {
+                    color: var(--map-view-font-color, #909192);
+                }
+                .viewTypeName {
+                    color: var(--map-white-font-color, #404856);
+                }
+            }
+        }
+
+        .ant-table-thead {
+            height: 64px !important;
+            border-radius: 0;
+            font-size: 16px;
+            font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+            font-weight: 500;
+            > tr > th {
+                transition: @themeColorAnimation;
+                background-color: var(--table-head-color, #f6faff);
+            }
+        }
+        .ant-table-content {
+            transition: @themeColorAnimation;
+
+            table {
+                background: var(--tab-color);
+
+                thead tr {
+                    th {
+                        border-color: var(--table-border-color, #e8e8e8);
+                        color: var(
+                            --tab-font-default-color,
+                            rgba(0, 0, 0, 0.85)
+                        );
+                    }
+                }
+                tbody tr {
+                    color: var(--tab-font-default-color);
+                    td {
+                        border-color: var(--table-border-color, #e8e8e8);
+                        color: var(--table-hover-font-color);
+                        padding: 10px 0;
+                        transition: @themeColorAnimation;
+                        .ant-empty-description {
+                            color: var(--tab-font-default-color, #46484b);
+                        }
+                        background: transparent !important;
+                    }
+                    &:hover {
+                        td {
+                            background: var(--table-border-color, #fafafa);
+                        }
+                    }
+                }
+            }
+        }
+        // .ant-table-pagination.ant-pagination {
+        //     background-color: var(--table-head-color, #fff);
+        // }
+    }
+}
+.subToolsModal {
+    background: transparent;
+    border-radius: 23px;
+    button {
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+        font-weight: 500;
+        color: rgba(253, 253, 253, 0.85);
+    }
+}
+//map右侧工具视角选择框
+.baseViewType {
+    background-color: var(--table-head-color, #fff) !important;
+    div {
+        color: var(--map-white-font-color, #fff) !important;
+    }
+}
+//map tool
+.maptalks-control > div {
+    left: auto !important;
+    right: 20px;
+    z-index: 9999;
+}
+
+// 历史统计页面弹框单独设计
+.faults-modal {
+    .ant-modal-content {
+        .ant-modal-header {
+            padding-left: 24px;
+        }
+    }
+    .ant-modal-body {
+        padding: 0;
+        .subview {
+            .sub-tools {
+                padding: 12px 24px;
+                align-items: center;
+                .sub-tools-left .ant-picker {
+                    border: 0;
+                    padding: 0;
+
+                    .ant-picker-suffix {
+                        display: none;
+                    }
+                    .ant-picker-input {
+                        color: #5a5c60;
+                    }
+                    .ant-picker-range-separator {
+                        // height: 5px;
+                        // border-bottom: 1px solid #5a5c60;
+                        margin-right: 10px;
+                        // span {
+                        //     display: none;
+                        // }
+                    }
+                }
+
+                .sub-tools-right .export-button {
+                    height: 24px;
+                    width: 48px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    background-color: #5098ff;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+            }
+            .ant-table-thead {
+                tr th {
+                    background-color: #f1f4f8;
+                    &::before {
+                        width: 0 !important;
+                    }
+                }
+            }
+            .ant-table-tbody {
+                tr td {
+                    color: #5a5c60;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+.ant-layout-content .ant-table-empty {
+    border-radius: 0 0 16px 16px;
+    table {
+        border-radius: 0 0 16px 16px;
+    }
+    .ant-table-container {
+        background: var(--bg-contont-color);
+    }
+    tbody {
+        .ant-table-cell {
+            border-radius: 0 0 16px 16px;
+        }
+    }
+}
+tbody > :last-child td {
+    border-bottom: 0px !important;
+}
+
+// version
+.version {
+    width: 100%;
+    height: 100%;
+    background: var(--tab-color, #ffffff);
+    border-radius: 24px;
+    padding-top: 69px;
+    padding-bottom: 32px;
+    overflow: hidden;
+    font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+    color: #404856;
+    transition: @themeColorAnimation;
+    .ant-timeline {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .ant-timeline-item {
+            width: 70%;
+            padding-bottom: 0;
+            // height: 166px;
+            // margin-top: 25px;
+
+            .ant-timeline-item-label {
+                width: calc(30% - 50px);
+                font-size: 20px;
+                padding-right: 20px;
+                line-height: 30px;
+                color: var(--tab-font-default-color);
+            }
+            .ant-timeline-item-tail {
+                height: 100%;
+                left: 30%;
+                border-color: #1890ff;
+            }
+            .ant-timeline-item-head {
+                left: calc(30% - 5px);
+                height: 20px;
+                width: 20px;
+                background-color: #1890ff;
+            }
+            .ant-timeline-item-content {
+                width: 70%;
+                left: calc(30% + 10px);
+                font-size: 22px;
+                font-weight: 500;
+                color: #092b6f;
+                line-height: 33px;
+
+                .timeline-title {
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin-bottom: 10px;
+                    color: var(--tab-font-light-color);
+                }
+                .timeline-content {
+                    width: 100%;
+                    // height: 70px;
+                    font-size: 16px;
+                    color: var(--tab-font-default-color, #666974);
+                    line-height: 24px;
+                    // margin-top: 8px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    .icon-xinzeng {
+                        color: #6dff7f;
+                    }
+                    .icon-xiufu {
+                        color: #58bdff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: @themeColorAnimation;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: var(--scrollbar-color, #E2E6EE;);
+    transition: @themeColorAnimation;
+}
+.ant-table-cell-scrollbar {
+    box-shadow: 0 0 0;
+}
+
+.ant-space-item {
+    .ant-avatar {
+        cursor: pointer;
+        color: var(--table-hover-font-color, #979797);
+        background-color: var(--avatar-bg-color, #fff);
+        transition: @themeColorAnimation;
+        box-shadow: @avatar-bs-color;
+    }
+}
+
+// 分页码
+.ant-pagination {
+    margin: 0 !important;
+    padding: 20px 50px 20px 0;
+    // background: var(--tab-color, #fff);
+    border-radius: 0 0 23px 23px;
+    border-top: 1px solid var(--table-border-color, #e8e8e8);
+    transition: @themeColorAnimation;
+    li {
+        height: 32px !important;
+        margin: 0 5px;
+        .ant-pagination-item-link
+            .ant-pagination-item-container
+            .ant-pagination-item-ellipsis {
+            color: var(--table-hover-font-color, #a7b5d5);
+        }
+    }
+    li > .ant-pagination-item-link .anticon {
+        color: #a7b5d5;
+    }
+    .ant-pagination-item {
+        width: 40px;
+        line-height: 32px !important;
+        border-radius: 4px;
+        border: 1px solid var(--table-border-color, #d9d9d9) !important;
+        margin: 0 5px !important;
+        a {
+            color: var(--second-white-font-color, #000);
+        }
+    }
+    .ant-pagination-item-active {
+        background-color: #5098ff;
+        border: 0 !important;
+        a {
+            color: var(--white-font-color, #fff);
+        }
+    }
+    .ant-pagination-options {
+        color: var(--table-hover-font-color, #595959);
+
+        .ant-pagination-options-quick-jumper input {
+            width: 40px !important;
+            height: 32px !important;
+            background: var(--table-border-color, #fff);
+            color: var(--table-hover-font-color, #000);
+            border-radius: 4px;
+            border: 1px solid var(--table-border-color, #d9d9d9);
+            text-align: center;
+        }
+        .ant-select {
+            height: 32px !important;
+            .ant-select-selector {
+                height: 100% !important;
+                .ant-select-selection-item {
+                    line-height: 32px !important;
+                }
+            }
+        }
+    }
+}
+// 白色主题
+.ant-modal {
+    top: 20%;
+    .ant-modal-content {
+        box-shadow: 0px 2px 18px 4px rgba(131, 142, 159, 0.54);
+        border-radius: 16px;
+        .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+            .ant-select-selector,
+        .ant-picker-input > input[disabled],
+        .ant-input[disabled],
+        .ant-select-disabled.ant-select-multiple .ant-select-selection-item,
+        .ant-input-number-disabled {
+            color: unset;
+        }
+        .ant-modal-close .ant-modal-close-x {
+            color: #000;
+        }
+
+        .ant-modal-header {
+            border-radius: 16px 16px 0 0;
+        }
+    }
+}
+// 弹出框
+.theme-black-modal {
+    .ant-modal {
+        .ant-modal-content {
+            box-shadow: 6px 14px 20px 8px rgba(46, 48, 57, 0.52),
+                0px 2px 6px 0px #131623;
+            background-color: #191f3f;
+            color: #becbe9;
+            .ant-modal-close .ant-modal-close-x {
+                color: #fff;
+            }
+            .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+                .ant-select-selector,
+            .ant-picker-input > input[disabled],
+            .ant-input[disabled],
+            .ant-select-disabled.ant-select-multiple
+                .ant-select-selection-item {
+                color: unset;
+            }
+            .ant-modal-header {
+                background-color: #191f3f;
+                border-color: #141834;
+                .ant-modal-title {
+                    color: #becbe9;
+                }
+            }
+            .ant-modal-footer {
+                background-color: #191f3f;
+                border-color: #141834;
+                border-radius: 0 0 23px 23px;
+                .ant-btn {
+                    background-color: #454c5d;
+                    color: #becbe9;
+                    border-color: #141834;
+                }
+                .ant-btn-primary {
+                    background-color: #1890ff;
+                }
+            }
+            .ant-picker-disabled {
+                background-color: #454c5d;
+                input {
+                    color: #becbe9;
+                }
+            }
+            .ant-modal-body .ant-form .ant-row {
+                .ant-form-item-label .ant-form-item-required {
+                    color: #becbe9;
+                }
+                label {
+                    color: #becbe9;
+                }
+                .ant-picker {
+                    background-color: #454c5d;
+                }
+
+                .ant-form-item-control
+                    .ant-form-item-control-input
+                    .ant-form-item-control-input-content {
+                    color: #a2a2a2;
+                    input,
+                    .ant-input,
+                    .ant-input-number,
+                    .ant-btn,
+                    .ant-upload,
+                    .ant-picker,
+                    .ant-upload-list-item {
+                        background-color: #454c5d;
+                        border-color: #454c5d;
+                        color: #b0bfdf;
+                        border-color: #000;
+                    }
+                    .ant-select {
+                        color: #b0bfdf;
+                        .ant-select-selector {
+                            background-color: #454c5d;
+                            border-color: #000;
+                            color: #b0bfdf;
+                        }
+                        .ant-select-arrow {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .ant-table.ant-table-small {
+                .ant-table-thead > tr > th,
+                .ant-table-tbody > tr > td,
+                tfoot > tr > td {
+                    background-color: #191f3f;
+                    color: #becbe9;
+                    border-bottom: #454c5d;
+                    .ant-empty-description {
+                        color: #becbe9;
+                    }
+                }
+                tbody tr {
+                    background-color: #191f3f;
+                    &:hover {
+                        td {
+                            // background: #454c5d;
+                            color: #b5c5e5;
+                        }
+                    }
+                }
+            }
+        }
+        .subview .sub-tools {
+            background-color: #191f3f;
+        }
+        .ant-pagination {
+            background-color: #191f3f;
+            border-top: 1px solid #141834 !important;
+            .ant-pagination-item {
+                // border: 1px solid #454c5d !important;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .ant-table-body::-webkit-scrollbar {
+        background-color: #191f3f;
+    }
+}
+//删除弹框
+.theme-black-delete-modal {
+    .ant-modal-content {
+        box-shadow: 6px 14px 20px 8px rgba(46, 48, 57, 0.52),
+            0px 2px 6px 0px #131623;
+        background-color: #191f3f;
+        color: #becbe9;
+        .ant-modal-confirm-title {
+            color: #b5c5e5;
+        }
+        .ant-modal-confirm-content {
+            color: #b5c5e5;
+        }
+        .ant-modal-confirm-btns {
+            background-color: #191f3f;
+            border-color: #141834;
+            border-radius: 0 0 23px 23px;
+            .ant-btn {
+                background-color: #454c5d;
+                color: #becbe9;
+                border-color: #141834;
+            }
+            .ant-btn-dangerous {
+                background-color: #1890ff;
+            }
+        }
+    }
+}
+
+// 下拉框
+.theme-black-select {
+    background-color: #191f3f;
+
+    div .rc-virtual-list div .rc-virtual-list-holder-inner {
+        .ant-select-item-option {
+            background-color: #363c57;
+            color: #b0bfdf;
+        }
+        .ant-select-item-option-active {
+            background-color: #5098ff;
+            color: #fff;
+        }
+    }
+    .ant-picker-panel-container {
+        background-color: #363c57;
+        .ant-picker-time-panel-cell-inner {
+            color: #b0bfdf !important;
+        }
+        .ant-picker-panel {
+            border-width: 0;
+        }
+    }
+    // 历史统计设置日期样式
+    .ant-picker-header {
+        button {
+            color: #fff;
+        }
+        border-bottom: 1px solid #282d42;
+    }
+    .ant-picker-body {
+        th,
+        td {
+            color: #fff;
+        }
+        .ant-picker-cell-in-range::before {
+            background: #3c476d;
+        }
+        .ant-picker-cell-range-start::before {
+            background: #3c476d;
+        }
+        .ant-picker-cell-range-end::before {
+            background: #3c476d;
+        }
+        .ant-picker-cell-selected::before {
+            background: #3c476d;
+        }
+        td:hover {
+            // color: var(--tab-icon-default-color,#fff);
+        }
+    }
+}
+
+//历史统计卡片
+.ant-card {
+    background-color: var(--tab-color, #fff);
+    border: 1px solid var(--tab-color, #fff);
+    transition: @themeColorAnimation;
+    .ant-card-body {
+        color: var(--tab-font-default-color, #46484b);
+        .ant-progress-text {
+            color: var(--tab-font-default-color, #46484b);
+        }
+        .ant-picker {
+            border: 1px solid var(--tab-color, #d9d9d9);
+            .ant-picker-input > input {
+                color: var(--tab-font-default-color, #46484b);
+            }
+        }
+        .ant-input-affix-wrapper {
+            border: 1px solid var(--tab-color, #d9d9d9);
+            .ant-input {
+                background-color: var(--input-bg-color, #fff);
+                color: var(--tab-font-default-color, #46484b);
+            }
+        }
+    }
+}
+.auto-height {
+    .ant-table.ant-table-small {
+        .ant-table-thead > tr > th,
+        .ant-table-tbody > tr > td,
+        tfoot > tr > td {
+            transition: @themeColorAnimation;
+            background-color: var(--tab-color, #fff);
+            color: var(--tab-font-default-color, #46484b);
+            padding: 6px 0;
+            .ant-empty-description {
+                color: var(--tab-font-default-color, #46484b);
+            }
+        }
+        tbody tr {
+            td {
+                border-bottom: 1px solid var(--table-border-color, #e8e8e8);
+            }
+
+            &:hover {
+                td {
+                    background: var(--table-border-color, #fafafa);
+                    color: var(--table-hover-font-color);
+                }
+            }
+        }
+        .ant-table-thead {
+            height: 64px;
+            border-radius: 0;
+            font-size: 16px;
+            font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+            font-weight: 500;
+            > tr > th {
+                border-bottom: 1px solid var(--table-border-color, #e8e8e8);
+            }
+        }
+        .ant-table-body {
+            background-color: var(--tab-color);
+        }
+        .ant-table-body::-webkit-scrollbar {
+            background-color: var(--tab-color);
+        }
+        .fault-button {
+            background-color: var(--tab-color, #fff);
+            border: 0;
+            color: var(--white-font-color, #1890ff);
+            height: 20px;
+            line-height: 15px;
+            box-shadow: 0px 2px 2px 2px
+                var(--faults-view-button-color, rgba(236, 236, 236, 0.5));
+        }
+    }
+}
+.auto-height-samll {
+    .ant-table.ant-table-small {
+        .ant-table-thead > tr > th,
+        .ant-table-tbody > tr > td,
+        tfoot > tr > td {
+            transition: @themeColorAnimation;
+            background-color: var(--tab-color, #fff);
+            color: var(--tab-font-default-color, #46484b);
+            padding: 6px 0;
+            .ant-empty-description {
+                color: var(--tab-font-default-color, #46484b);
+            }
+        }
+        tbody tr {
+            td {
+                border-bottom: 1px solid var(--table-border-color, #e8e8e8);
+            }
+            &:hover {
+                td {
+                    background: var(--table-border-color, #fafafa);
+                    color: var(--table-hover-font-color);
+                }
+            }
+        }
+        .ant-table-thead {
+            height: 30px;
+            border-radius: 0;
+            font-size: 16px;
+            font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+            font-weight: 500;
+            > tr > th {
+                background-color: var(--table-head-color, #f6faff);
+                border-bottom: 1px solid var(--table-head-color, #f6faff);
+            }
+        }
+        .ant-table-body {
+            background-color: var(--tab-color);
+        }
+        .ant-table-body::-webkit-scrollbar {
+            background-color: var(--tab-color);
+        }
+        .fault-button {
+            background-color: var(--tab-color, #fff);
+            border: 0;
+            color: var(--white-font-color, #1890ff);
+            height: 20px;
+            line-height: 15px;
+            box-shadow: 0px 2px 2px 2px
+                var(--faults-view-button-color, rgba(236, 236, 236, 0.5));
+        }
+    }
+}
+
+// 登陆表单
+.login-form {
+    .ant-input-affix-wrapper {
+        color: rgba(0, 0, 0, 0.25);
+    }
+    input {
+        height: 25px;
+    }
+    .ant-form-item-extra {
+        color: red;
+    }
+}
+// 轮播图
+.ant-carousel .slick-slider .slick-dots {
+    li {
+        margin: 0 20px;
+        button {
+            background: var(--tab-icon-default-color, #bbbfc7);
+            height: 6px;
+            width: 50px;
+            border-radius: 5px;
+        }
+    }
+    .slick-active button {
+        background: #3490ff;
+        height: 6px;
+        width: 55px;
+    }
+}

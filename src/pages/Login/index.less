@@ -1,0 +1,92 @@
+.loginPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &::after {
+        width: 100%;
+        height: 100%;
+        content: '';
+        display: block;
+        background: #000 url(../../assets/images/login/login.png) no-repeat;
+        background-size: 100% 100%;
+        filter: hue-rotate(20deg) blur(10px);
+        background-position: center center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        transform: scale(1.05);
+    }
+    .logo {
+        margin-top: 234px;
+        margin-bottom: 87px;
+        font-size: 40px;
+        line-height: 1;
+        color: #fff;
+    }
+    .loginWindow {
+        height: 368px;
+        width: 466px;
+        background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0px 2px 4px 0px rgba(186, 186, 186, 0.5);
+        border-radius: 16px;
+        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+
+        .staticText {
+            width: 100%;
+            text-align: center;
+            color: #1890ff;
+            line-height: 24px;
+            font-size: 20px;
+            margin-top: 44px;
+            margin-bottom: 40px;
+        }
+        .loginForm {
+            max-width: 300px;
+            margin: 0 auto;
+
+            .loginFormButton {
+                width: 100%;
+                height: 40px;
+                margin-top: 20px;
+            }
+            .regist {
+                color: #1890ff;
+                margin: 0 auto;
+                display: block;
+                width: 50px;
+                margin-top: 10px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.shake {
+    animation: shake 800ms ease-in-out;
+}
+
+@keyframes shake {
+    /* 水平抖动，核心代码 */
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(+2px, 0, 0);
+    }
+    30%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(+4px, 0, 0);
+    }
+    50% {
+        transform: translate3d(-4px, 0, 0);
+    }
+}

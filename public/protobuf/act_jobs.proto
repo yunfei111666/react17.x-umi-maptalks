@@ -1,0 +1,58 @@
+// [START declaration]
+syntax = "proto3";
+// [END declaration]
+import "google/protobuf/timestamp.proto"; 
+import "point.proto";
+import "container.proto";
+// [START messages]
+
+message AdvisorySpeeds{
+  double vmax = 1; //最大速度
+  double vmin = 2; //最小速度
+}
+
+message NaviPoint{
+  Point pos = 1;
+  double heading = 2; //当前车辆建议航向角，与正北方向的夹角，(0..28800) unit: 0.0125 degrees
+                      // 当车辆为行驶或自然转弯状态时，近似等于当前道路切线方向的角度，
+                      // 当车辆为斜行时，heading 为车身朝向，保持不变且与道路切线具有夹角
+  AdvisorySpeeds speeds = 3;  // 建议速度
+  int32 type           = 4;  // 路径关键控制点，表征道路线型变化：
+                              // - 0 直行线路
+                              // - 1 转弯线路
+                              // - 2 变道线路
+                              // - 3 人字形线路
+  uint32 direction      = 5;
+}
+
+
+// FMS向TOS模块上传的任务执行反馈
+message ActJobs{ 
+    string	job_gkey	=	1;	//	指令主键，不可重复，由数据库自动生成，对应下发给TPA的task_id
+    string	order_gkey	=	2;	//	对应ACT_ ORDERS表
+    string	task_gkey	=	3;	//	对应ACT_TASKS指令的ID
+    string	che_id	    =	4;	//	执行指令的车辆ID
+    string	job_type	=	5;	//	JOB类型,见ACT Job Type（车辆Job类型）
+    string	job_status	=	6;	//	JOB指令状态,见Job Status（FMS指令状态）
+    string	problem_code	    =	7;	//	见Problem Code（问题代码）
+    string	problem_description	=	8;	//	针对PROBLEM_CODE的问题描述
+    string	kbp_id	=	9;	//	关键业务点名称，根据该值来设置target及subtarget,见Key Business Point（关键业务点）
+    string	target	=	10;	//	目的地target，与发送给TPA TosTask中的target对应
+    string	subtarget	        =	11;	//	目的地subtarget，与发送给TPA TosTask中的subtarget对应，一般是车道号或贝位号
+    Point	dest_point	=	12;	//
+    string	is_path_guidence	=	13;	//	是否有途径点，如果有，详细信息在JOB_ROUTE（车辆Job途径表）中 YES – 是 NO – 否
+    string	is_final	=	14;	//	是否为ACT_TASKS表中的终点ACTUAL_DESTINATION YES – 是终点 NO – 不是终点（默认）
+    google.protobuf.Timestamp	pta	    =	15;	//	预计到达时间
+    google.protobuf.Timestamp	created	=	16;	//	创建时间
+    google.protobuf.Timestamp	updated	=	17;	//	更新时间
+    repeated NaviPoint way_points = 18;  // tpg补偿过的navi,做前端展示,拿不到前端不做展示
+    repeated NaviPoint original_way_points = 19;  // fms下发的原始navi
+    repeated Container containers = 20;  // 集装箱信息
+    int32 task_progress = 21;  // 任务进度
+    string task_source = 22; // 指令来源，区分是TOS指令还是其它系统或人工下发的指令。见Task Source（Task来源）
+    string job_business = 23; // 车辆行为类型
+                                //  DELIVER-送箱子
+                                //  RECEIVE-接箱子
+                                //  PARK-去停车
+                                //  MOVE-指定目的地移动
+}

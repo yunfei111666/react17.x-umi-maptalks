@@ -1,0 +1,51 @@
+.helpView {
+    height: 100%;
+    .childrenView {
+        height: 100%;
+        .title {
+            position: relative;
+            bottom: 5px;
+            text-align: left;
+            font-size: 20px;
+            color: var(--tab-font-default-color, #404856);
+        }
+        .imgs {
+            width: 100%;
+            height: calc(100vh - 170px);
+        }
+        .shade {
+            position: absolute;
+            bottom: 5px;
+            width: 7.64%;
+            height: 12vw;
+            border-radius: 10px;
+            // background: linear-gradient(180deg, var(--faults-mesage-background-color,rgba(255, 255, 255, 0.3) 0%), var(--faults-mesage2-background-color,rgba(255, 255, 255, 1.0) 100%));
+            background: var(--tab-color, #fff);
+            box-shadow: 0px 0.104167vw 0.416667vw 1px
+                var(--tab-stroke-color, #cfd7de);
+            padding-top: 20px;
+            margin-left: 5px;
+            .leftCol {
+                padding-left: 50px;
+                .mesageTitle {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: var(--tab-font-default-color, #092b6f);
+                    line-height: 50px;
+                }
+                span {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: var(--tab-font-default-color, #404856);
+                    line-height: 27px;
+                }
+                .concise {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(--tab-font-default-color, #666974);
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

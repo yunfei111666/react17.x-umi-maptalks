@@ -1,0 +1,946 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.6.16",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "平面",
+      "scale": [
+        18.600000381469727,
+        1,
+        4.050000190734863
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "柱体.001",
+      "scale": [
+        1.2000000476837158,
+        1,
+        1.2000000476837158
+      ],
+      "translation": [
+        17.36058807373047,
+        0.9983655214309692,
+        5.250406742095947
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": 2,
+      "name": "立方体",
+      "scale": [
+        2.799999952316284,
+        1,
+        1.2000000476837158
+      ],
+      "translation": [
+        14.558924674987793,
+        0.998363733291626,
+        5.255258560180664
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": 3,
+      "name": "柱体.004",
+      "scale": [
+        1.2000000476837158,
+        1,
+        1.2000000476837158
+      ],
+      "translation": [
+        17.41625213623047,
+        1.0016000270843506,
+        -5.280284881591797
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": 4,
+      "name": "立方体.001",
+      "scale": [
+        2.799999952316284,
+        1,
+        1.2000000476837158
+      ],
+      "translation": [
+        14.603251457214355,
+        1.0015983581542969,
+        -5.275477409362793
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "mesh": 5,
+      "name": "柱体.003",
+      "rotation": [
+        0.004599022679030895,
+        0.9999807476997375,
+        -0.0030271788127720356,
+        0.0028696246445178986
+      ],
+      "scale": [
+        1.2000000476837158,
+        1,
+        1.2000000476837158
+      ],
+      "translation": [
+        -17.4060115814209,
+        0.999098002910614,
+        -5.299942493438721
+      ]
+    },
+    {
+      "mesh": 6,
+      "name": "立方体.003",
+      "rotation": [
+        -0.004879678133875132,
+        0.0014463394181802869,
+        0.0003191040304955095,
+        0.999987006187439
+      ],
+      "scale": [
+        2.799999952316284,
+        1,
+        1.2000000476837158
+      ],
+      "translation": [
+        -14.575308799743652,
+        0.999098002910614,
+        -5.307806015014648
+      ]
+    },
+    {
+      "mesh": 7,
+      "name": "柱体.002",
+      "rotation": [
+        0.004599022679030895,
+        0.9999807476997375,
+        -0.0030271788127720356,
+        0.0028696246445178986
+      ],
+      "scale": [
+        1.2000000476837158,
+        1,
+        1.2000000476837158
+      ],
+      "translation": [
+        -17.276355743408203,
+        0.9385625123977661,
+        5.2766008377075195
+      ]
+    },
+    {
+      "mesh": 8,
+      "name": "立方体.002",
+      "rotation": [
+        -0.004879678133875132,
+        0.0014463394181802869,
+        0.0003191040304955095,
+        0.999987006187439
+      ],
+      "scale": [
+        2.799999952316284,
+        1,
+        1.2000000476837158
+      ],
+      "translation": [
+        -14.445653915405273,
+        0.9385625123977661,
+        5.268737316131592
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "材质",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5332767367362976,
+          0.577580451965332,
+          0.7156937122344971,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "材质.004",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.15896090865135193,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "材质.039",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.15896090865135193,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "材质.041",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.15896090865135193,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "材质.040",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.15896090865135193,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "材质.044",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.15896090865135193,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "材质.043",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.15896090865135193,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "材质.046",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.15896090865135193,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "材质.045",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.15896090865135193,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "平面",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "柱体.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "立方体",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TEXCOORD_0": 11
+          },
+          "indices": 8,
+          "material": 2,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "柱体.012",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 13,
+            "NORMAL": 14,
+            "TEXCOORD_0": 15
+          },
+          "indices": 12,
+          "material": 3,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 3,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "立方体.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 17,
+            "NORMAL": 18,
+            "TEXCOORD_0": 19
+          },
+          "indices": 16,
+          "material": 4,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 4,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "柱体.013",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 21,
+            "NORMAL": 22,
+            "TEXCOORD_0": 23
+          },
+          "indices": 20,
+          "material": 5,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 5,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "立方体.003",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 25,
+            "NORMAL": 26,
+            "TEXCOORD_0": 27
+          },
+          "indices": 24,
+          "material": 6,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 6,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "柱体.014",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 29,
+            "NORMAL": 30,
+            "TEXCOORD_0": 31
+          },
+          "indices": 28,
+          "material": 7,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 7,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "立方体.004",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 33,
+            "NORMAL": 34,
+            "TEXCOORD_0": 35
+          },
+          "indices": 32,
+          "material": 8,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 8,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1.0009770395701025,
+        0.0009770395701025891,
+        1.0009770395701025
+      ],
+      "min": [
+        -1.0009770395701025,
+        -0.0009770395701025891,
+        -1.0009770395701025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 372,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "max": [
+        1.0009770395701025,
+        1.0009770395701025,
+        1.0009770395701025
+      ],
+      "min": [
+        -1.0009770395701025,
+        -1.0009770395701025,
+        -1.0009770395701025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.0009770395701025,
+        1.0009770395701025,
+        1.0009770395701025
+      ],
+      "min": [
+        -1.0009770395701025,
+        -1.0009770395701025,
+        -1.0009770395701025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 372,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "max": [
+        1.0009770395701025,
+        1.0009770395701025,
+        1.0009770395701025
+      ],
+      "min": [
+        -1.0009770395701025,
+        -1.0009770395701025,
+        -1.0009770395701025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.0009770395701025,
+        1.0009770395701025,
+        1.0009770395701025
+      ],
+      "min": [
+        -1.0009770395701025,
+        -1.0009770395701025,
+        -1.0009770395701025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 372,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "max": [
+        1.0009770395701025,
+        1.0009770395701025,
+        1.0009770395701025
+      ],
+      "min": [
+        -1.0009770395701025,
+        -1.0009770395701025,
+        -1.0009770395701025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.0009770395701025,
+        1.0009770395701025,
+        1.0009770395701025
+      ],
+      "min": [
+        -1.0009770395701025,
+        -1.0009770395701025,
+        -1.0009770395701025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 372,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "max": [
+        1.0009770395701025,
+        1.0009770395701025,
+        1.0009770395701025
+      ],
+      "min": [
+        -1.0009770395701025,
+        -1.0009770395701025,
+        -1.0009770395701025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 192,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.0009770395701025,
+        1.0009770395701025,
+        1.0009770395701025
+      ],
+      "min": [
+        -1.0009770395701025,
+        -1.0009770395701025,
+        -1.0009770395701025
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 169
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 176,
+      "byteLength": 632
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 808,
+      "byteLength": 191
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1000,
+      "byteLength": 632
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1632,
+      "byteLength": 191
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1824,
+      "byteLength": 632
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2456,
+      "byteLength": 191
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2648,
+      "byteLength": 632
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3280,
+      "byteLength": 191
+    }
+  ],
+  "buffers": [
+    {
+      "name": "suodao_draco",
+      "byteLength": 3472,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

@@ -1,0 +1,41 @@
+@import url(../../theme/mixin.less);
+@import url(../../theme/global-css.less);
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: calc(100%);
+    // position: absolute;
+    // top: 48px;
+    // left: 0;
+    z-index: 1;
+
+    .map {
+        width: 100%;
+        height: 100%;
+        background: @dev-map-bg-color;
+    }
+}
+.custom_menu {
+    width: 90px;
+    color: #fff;
+    background-color: #051127;
+    border: 1px solid #0c2c45;
+    list-style: none;
+    padding: 0;
+}
+.custom_menu li {
+    padding: 0 8px;
+    font-size: 12px;
+    line-height: 24px;
+}
+.custom_menu li:hover {
+    background: #0e595e;
+    cursor: pointer;
+}
+.custom_menu li + li {
+    border-top: 1px solid #bbb;
+}

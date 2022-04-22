@@ -1,0 +1,27 @@
+@import url(../../theme/mixin.less);
+.dragItem {
+    // border: 1px solid var(--sider-bg-color);
+    width: 172px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 12px 0 12px 12px;
+    background: @dev-pool-item-bg-color;
+    cursor: pointer;
+}
+.dragItem.active {
+    border-style: dashed;
+}
+.dragItem-main {
+    padding: 5px;
+    font-size: 14px;
+    color: @dev-pool-item-font-color;
+    height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

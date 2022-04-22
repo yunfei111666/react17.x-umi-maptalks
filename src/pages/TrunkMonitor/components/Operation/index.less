@@ -1,0 +1,87 @@
+.content {
+    padding: 24px 20px;
+    height: calc(100% - 45px);
+
+    .tag {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 116px; // 10.740%;
+
+        .mileage {
+            flex: 1;
+            width: calc(33.333% - 10px);
+            font-size: 32px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 48px;
+            font-family: 'SiYuan';
+            padding: 15px;
+            text-align: center;
+            background: #192f6b;
+            border-radius: 10px;
+            box-shadow: 2px 2px 14px 1px rgba(0, 0, 0, 0.12);
+
+            .top {
+                span:first-child {
+                    max-width: 100%;
+                    font-weight: bold;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                .unit {
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 12px;
+                    line-height: 50px;
+                    // padding-left: 8px;
+                }
+            }
+
+            .text {
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(255, 255, 255, 0.8);
+
+                i {
+                    color: rgba(87, 101, 140, 1);
+                    font-size: 32px;
+                }
+            }
+
+            .top,
+            .text {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+        }
+
+        .mileage:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        // .tag:not(:last-child){
+        //     margin-right: 5px;
+        // }
+        // .tag{
+        //     background: #192f6b;
+        // }
+    }
+
+    .chart {
+        //height: 23.148148%;//250px;
+        height: calc(100% - 135px);
+        width: 100%;
+        padding: 0px 15px;
+        background: #0f2665;
+        border-radius: 10px;
+        box-shadow: 2px -1px 14px 1px rgba(0, 0, 0, 0.14);
+        position: relative;
+    }
+}
+
+.box {
+    height: 53%; //45.3703703%; //49%;
+}

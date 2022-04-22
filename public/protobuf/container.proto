@@ -1,0 +1,16 @@
+// [START declaration]
+syntax = "proto3";
+// [END declaration]
+
+// [START messages]
+message Container{
+    string	id	    =	1	;	//	箱号1
+    string	size	  =	2	;	//	箱型。
+                                // 20 – 20’箱子
+                                // 40 – 40’或45’箱子
+    string	position=	3	;	//	箱位置
+                                // 1 – 前
+                                // 2 – 中
+                                // 3 – 后
+    uint32  weight	=	4	;	//	箱重1，单位kg
+}

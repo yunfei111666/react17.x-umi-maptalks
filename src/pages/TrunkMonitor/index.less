@@ -1,0 +1,69 @@
+@import url(../../theme/global-css.less);
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    .wrapper {
+        width: 100%;
+        padding: 40px 30px 25px;
+        height: calc(100% - 79px);
+        background: radial-gradient(circle, #061e60 0%, #05052b 89%);
+        display: flex;
+        margin-top: -1px;
+
+        .leftCon {
+            width: 25%; //480px;
+            transition: all 0.3s linear;
+        }
+
+        .middleCon {
+            height: 100%;
+            position: relative;
+            transition: width 0.3s ease-in;
+            .zoom {
+                font-size: 20px;
+                color: #fff;
+                position: absolute;
+                right: 25px;
+                top: 10px;
+                z-index: 110000;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .fullMap {
+            position: absolute;
+            width: calc(100% - 60px);
+            height: calc(100% - 150px);
+        }
+
+        .defaultMap {
+            position: relative;
+            width: 50%;
+        }
+
+        .rightCon {
+            width: 25%; //80px;
+            transition: all 0.3s linear;
+        }
+
+        .leftCon.full {
+            transform: translate(-110%, 0);
+        }
+
+        .rightCon.full {
+            transform: translate(110%, 0);
+        }
+
+        .full {
+            opacity: 0;
+        }
+
+        .default {
+            opacity: 1;
+        }
+    }
+}

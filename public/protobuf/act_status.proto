@@ -1,0 +1,57 @@
+// [START declaration]
+syntax = "proto3";
+// [END declaration]
+import "google/protobuf/timestamp.proto"; 
+import "point.proto";
+// [START messages]
+
+
+message FaultInfo{
+    string code = 1;
+    string desc = 2;
+}
+
+// FMS向TOS模块上传的车辆状态消息，TOS模块根据需要挑取必要信息给外部TOS
+message ActStatus{ 
+    string	che_id	            =	1	;	//	主键，ACT Id号
+    string	is_attendence_tos	=	2	;	//	在TOS中是否出勤
+                                            //  YES
+                                            //  NO
+    string	state_flow	        =	3	;	//	TPA状态机值,见TPA State Machine（TPA状态机）
+    string	estop	            =	4	;	//	"是否处于Estop状态
+                                            //   YES
+                                            //   NO"
+    string	planned_destination	=	5	;	//	计划目的位置
+    string	technical_status	=	6	;	//	"技术状态，默认GREEN,见Technical Status（车辆技术状态）,如果底层没有将该值传上来，可以为null"
+    string	technical_details	=	7	;	//	技术状态描述，GREEN时不描述
+    repeated FaultInfo faults	=	8	;	//	故障状态,见ACT Fault Status（车辆故障状态）
+    string	operational_status	=	9	;	//	见Operational Status（机械操作状态）
+    string	motion_mode	        =	10	;	//	平板车当前运动模式，集卡可以为空
+    float   mileage             =   11  ;   //  里程
+    string	location	        =	12	;	//	当前位置
+    string	last_location	    =	13	;	//	上个位置
+    string	next_location	    =	14	;	//	下一个目标位置
+    Point	point	    =	15	;	//	当前坐标点
+    float   yaw                 =   16  ;   //  转向角
+    float	distance_to_target	=	17	;	//	离下一个目标位置的距离，单位米
+    string	orientation	        =	18	;	//	"行进方向
+                                            //  FRONT - 前向（默认）
+                                            //  REAR - 后向"
+    float	speed	            =	19	;	//	当前运动速度
+    int32	soh	                =	20	;	//	电池健康状态，电池当前容量与初始容量的比值，百分比，1-100
+    int32	soc	                =	21	;	//	剩余电量百分比，1-100
+    string	is_charging	        =	22	;	//	"是否充电
+                                            //  NO - 未充电（默认）
+                                            //  YES - 充电中"
+    string	is_loaded	        =	24	;	//	"是否重载
+                                            //  YES – 重载
+                                            //  NO – 空载（默认）"
+    string  turn_light          =   25  ;   // 转向灯 none left right
+    string  gear                =   26  ;   // 档位 P N R D
+    double offset_l = 27;  // 停车精度的纵向偏差，l是longitudinal的首字母
+    double offset_t = 28;  // 停车精度的横向偏差，t是transverse的首字母
+    double offset_yaw = 29;  // 停车精度的航向角偏差
+    string task_gkey = 30;  // 指令主键，不可重复，由数据库自动生成
+    google.protobuf.Timestamp	created	=	31	;	//	创建时间
+    google.protobuf.Timestamp	updated	=	32	;	//	创建时间
+}

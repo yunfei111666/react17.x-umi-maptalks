@@ -1,0 +1,160 @@
+@import '../../../theme/global-css.less';
+@import url(../../../theme/mixin.less);
+
+.bgcBase {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.btnRight {
+    float: right;
+}
+
+.bgcImgMuddy {
+    z-index: 9;
+    background: url(../../../assets/images/admin/1-1.png) no-repeat;
+    background-size: contain;
+    left: 25%;
+}
+
+.bgcImgMuddy2 {
+    z-index: 9;
+    background: url(../../../assets/images/admin/1-2.png) no-repeat;
+    background-size: contain;
+    left: 50%;
+}
+
+.colHeight {
+    height: 100%;
+}
+
+.topCard {
+    position: relative;
+    height: 100%;
+    border-radius: 16px !important;
+    border: 0 !important;
+    background-color: var(--input-bg-color, #fff);
+
+    .leftIcon {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        background: rgba(255, 255, 255, 0.26);
+        border-radius: 40px;
+        top: 50%;
+        left: 10%;
+        margin-top: -40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        .iconFonts {
+            position: absolute;
+            font-size: 45px;
+            color: #e4ebf3;
+        }
+    }
+    .rightTitle {
+        position: absolute;
+        top: 50%;
+        right: 30%;
+        margin-top: -40px;
+        z-index: 100;
+
+        .titleText {
+            font-size: 18px;
+            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+            font-weight: 400;
+            color: #f3f7ff;
+        }
+
+        .number {
+            position: absolute;
+            font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+            font-weight: bold;
+            color: #ffffff;
+            width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .faultTitle {
+        font-size: 18px;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+        font-weight: 500;
+    }
+
+    .faultStatistics {
+        font-size: 12px;
+        font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+        font-weight: 400;
+    }
+
+    .faultRow {
+        height: 28px;
+    }
+}
+
+.topCardBackground1 {
+    background: linear-gradient(
+        314deg,
+        #5a8cff 0%,
+        rgba(90, 140, 255, 0.25) 100%
+    ) !important;
+    // box-shadow: 0px 2px 17px 2px rgba(182, 186, 191, 0.5);
+}
+
+.topCardBackground2 {
+    background: linear-gradient(
+        301deg,
+        #60a5ff 0%,
+        rgba(63, 146, 255, 0.31) 100%
+    ) !important;
+    // box-shadow: 0px 2px 17px 2px rgba(182, 186, 191, 0.5);
+}
+
+.topCardBackground3 {
+    background: linear-gradient(
+        314deg,
+        #93c7ff 0%,
+        rgba(126, 181, 255, 0.25) 100%
+    ) !important;
+    // box-shadow: 0px 2px 17px 2px rgba(182, 186, 191, 0.5);
+}
+.topCardBackground4 {
+    background: linear-gradient(
+        314deg,
+        #a3cfff 0%,
+        rgba(185, 215, 255, 0.25) 100%
+    ) !important;
+}
+.Icon {
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    box-shadow: 0px -2px 3px -1px rgba(182, 186, 191, 0.5);
+    span {
+        color: @sider-font-default-color !important;
+    }
+}
+#faults :global {
+    .ant-select-selector {
+        background-color: var(--input-bg-color, #fff);
+        border: 1px solid var(--tab-icon-default-color, #d9d9d9);
+        transition: @themeColorAnimation;
+    }
+    .ant-select-multiple .ant-select-selection-item {
+        background-color: var(--dev-side-light-bg-color);
+        border-color: @dev-table-bd-color;
+        color: @dev-shesuo-icon-color;
+    }
+}
