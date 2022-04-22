@@ -1,12 +1,15 @@
 <!--
  * @Author: yunfei
  * @Date: 2022-01-07 15:46:56
- * @LastEditTime: 2022-04-22 17:23:18
+ * @LastEditTime: 2022-04-22 17:24:32
  * @FilePath: /demo/react-umi-maptalks/README.md
  * @LastAuthor: Do not edit
  * @Description: 
 -->
-# umi project
+# 项目技术栈
+```
+react17.x全家桶、umi、google-protobuf、地图渲染组件maptalks、threejs等，实现自动驾驶车辆的全方位监控与管理
+```
 
 ## Getting Started
 
@@ -21,15 +24,6 @@ Start the dev server,
 ```bash
 $ yarn start
 ```
-
-## 资料
-演讲PPT
-TrunkInsight设计稿
-使用教程文档
-使用教程视频版
-视频对接文档
-API调试工具文档
-性能测试（长跑测试 视频带宽测试）
 
 ## 环境验证
 TrunkFace 演示数据验证
