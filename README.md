@@ -1,7 +1,7 @@
 <!--
  * @Author: yunfei
  * @Date: 2022-01-07 15:46:56
- * @LastEditTime: 2022-04-22 17:24:32
+ * @LastEditTime: 2022-04-22 17:25:35
  * @FilePath: /demo/react-umi-maptalks/README.md
  * @LastAuthor: Do not edit
  * @Description: 
@@ -24,13 +24,5 @@ Start the dev server,
 ```bash
 $ yarn start
 ```
-
-## 环境验证
-TrunkFace 演示数据验证
-
-## 视频对接格式
-
-工控机1-20 号视频对接  :9991/stream?topic=/dev/
-MDC 20以后  :9991/stream?topic=/mdc/camera_decoded_
 
 
